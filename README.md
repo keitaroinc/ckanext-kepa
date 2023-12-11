@@ -2,7 +2,7 @@
 
 # ckanext-kepa
 
-**TODO:** Put a description of your extension here:  What does it do? What features does it have? Consider including some screenshots or embedding a video!
+The main theme CKAN extension for KEPA open data portal.
 
 
 ## Requirements
@@ -20,6 +20,7 @@ Compatibility with core CKAN versions:
 | 2.7             | not tested    |
 | 2.8             | not tested    |
 | 2.9             | not tested    |
+| 2.10            | Yes           |
 
 Suggested values:
 
