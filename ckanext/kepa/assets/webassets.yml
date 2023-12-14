@@ -1,14 +1,14 @@
-# kepa-js:
-#   filter: rjsmin
-#   output: ckanext-kepa/%(version)s-kepa.js
-#   contents:
-#     - js/kepa.js
-#   extra:
-#     preload:
-#       - base/main
+kepa-js:
+  filter: rjsmin
+  output: ckanext-kepa/%(version)s-kepa.js
+  contents:
+    - js/kepa.js
+  extra:
+    preload:
+      - base/main
 
-# kepa-css:
-#   filter: cssrewrite
-#   output: ckanext-kepa/%(version)s-kepa.css
-#   contents:
-#     - css/kepa.css
+kepa-css:
+  filter: cssrewrite
+  output: ckanext-kepa/%(version)s-kepa.css
+  contents:
+    - css/kepa.css
