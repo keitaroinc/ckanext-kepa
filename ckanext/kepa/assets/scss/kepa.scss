@@ -1,0 +1,35 @@
+@import "variables";
+
+.masthead {
+    padding: 0 !important;
+    background-color: $primary-color;
+}
+
+.masthead .logo-text {
+    color: $white;
+    font-weight: $bold;
+    font-size: $bold-size;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    max-width: 70px;
+    height: auto;
+}
+
+.vertical-line {
+    height: 60px;
+    border-left: 3px solid $white;
+    margin: 0 10px;
+}
+
+.logo-text {
+    font-size: 18px;
+}
+.navbar-nav.ms-auto.mb-2.mb-lg-0 li {
+    text-transform: capitalize;
+  }

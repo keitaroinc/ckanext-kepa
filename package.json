@@ -1,0 +1,14 @@
+{
+  "name": "ckanext-kepa",
+  "version": "1.0.0",
+  "description": "[![Tests](https://github.com/Keitaro/ckanext-kepa/workflows/Tests/badge.svg?branch=main)](https://github.com/Keitaro/ckanext-kepa/actions)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w ckanext/kepa/assets/scss -o ckanext/kepa/assets/css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
