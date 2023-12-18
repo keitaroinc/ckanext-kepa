@@ -140,6 +140,7 @@
 
 .module-feeds {
   min-height: 300px;
+  background-color: #FAF3F1 !important;
 }
 
 .module-feeds .container {
