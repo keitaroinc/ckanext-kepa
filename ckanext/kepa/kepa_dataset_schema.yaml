@@ -20,10 +20,21 @@ dataset_fields:
   label: Abstract
   form_snippet: markdown.html
 
+- field_name: status
+  label: Status
+  preset: select
+  choices :
+  - value: Completed
+    label: Completed
+  - value: NotCompleted
+    label: Not Completed
+
+
+
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
-  form_placeholder: eg. economy, mental health, government
+  form_placeholder: eg. water, air, agency
 
 - field_name: license_id
   label: License
@@ -42,20 +53,15 @@ dataset_fields:
   form_placeholder: '1.0'
 
 
-
+- field_name: separator
+  display_snippet: separator.html
+  label: Test Separator
 
 
 - field_name: author
   label: Author
   form_placeholder: Joe Bloggs
   display_property: dc:creator
-
-- field_name: author_email
-  label: Author Email
-  form_placeholder: joe@example.com
-  display_property: dc:creator
-  display_snippet: email.html
-  display_email_name_field: author
 
 - field_name: owner_org
   label: Organization
@@ -68,6 +74,13 @@ dataset_fields:
 - field_name: voice
   label: Voice
   form_placeholder: eg. +38344 XXX-XXX
+
+- field_name: author_email
+  label: Author Email
+  form_placeholder: joe@example.com
+  display_property: dc:creator
+  display_snippet: email.html
+  display_email_name_field: author
 
 
 
