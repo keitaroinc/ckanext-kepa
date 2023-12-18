@@ -1,0 +1,24 @@
+{% set stats = h.get_site_statistics() %}
+
+<div class="module-stats module-stats-center-flex">
+  {% block stats_group %}
+  <div class="card">
+    <a href="{{ h.url_for('dataset.search') }}">
+      <h1>{{ h.SI_number_span(stats.dataset_count) }}</h1>
+      {{ _('dataset') if stats.dataset_count == 1 else _('Datasets') }}
+    </a>
+  </div>
+  <div class="card">
+    <a href="{{ h.url_for('organization.index') }}">
+      <h1>{{ h.SI_number_span(stats.organization_count) }}</h1>
+      {{ _('organization') if stats.organization_count == 1 else _('Organizations') }}
+    </a>
+  </div>
+  <div class="card">
+    <a href="{{ h.url_for('group.index') }}">
+      <h1>{{ h.SI_number_span(stats.group_count) }}</h1>
+      {{ _('group') if stats.group_count == 1 else _('Groups') }}
+    </a>
+  </div>
+  {% endblock %}
+</div>

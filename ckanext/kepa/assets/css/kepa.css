@@ -1,27 +1,149 @@
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .masthead {
   padding: 0 !important;
-  background-color: #1C768F; }
+  background-color: #1C768F;
+}
 
 .masthead .logo-text {
   color: white;
   font-weight: bolder;
-  font-size: larger; }
+  font-size: larger;
+}
 
 .logo-container {
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 .logo-image {
   max-width: 70px;
-  height: auto; }
+  height: auto;
+}
 
 .vertical-line {
   height: 60px;
   border-left: 3px solid white;
-  margin: 0 10px; }
+  margin: 0 10px;
+}
 
 .logo-text {
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 .navbar-nav.ms-auto.mb-2.mb-lg-0 li {
-  text-transform: capitalize; }
+  text-transform: capitalize;
+}
+
+.homepage .hero {
+  min-height: 400px;
+  background: url(/main-kepa-img.jpg) center/cover no-repeat;
+}
+
+.homepage .hero-placeholder .container {
+  min-height: 600px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homepage .hero-placeholder .container img {
+  max-height: 300px;
+}
+
+.heading {
+  color: white;
+  font-size: xx-large;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.btn-main-search {
+  background-color: #1C768F !important;
+  margin: 0 !important;
+  top: 0 !important;
+  height: 55px !important;
+  width: 55px;
+  padding: 0 !important;
+  right: 0 !important;
+  border: none;
+  border-radius: 0;
+}
+
+.search-form {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.form-control {
+  border: none;
+  border-radius: 0;
+}
+
+.tags {
+  background-color: white;
+  height: 55px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.tags h4 {
+  margin: 0 !important;
+  padding-left: 10px;
+}
+
+.tags a {
+  margin-bottom: 0 !important;
+  margin-left: 10px;
+}
+
+.card {
+  width: 200px;
+  align-items: center;
+  text-align: center;
+  background-color: #FA991C;
+}
+
+.card a {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.card a h1 {
+  font-size: xxx-large;
+  margin-bottom: 0;
+}
+
+.module-stats-center-flex {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.module-feeds {
+  min-height: 300px;
+}
+
+.module-feeds .container {
+  height: 200px;
+}
+
+/*# sourceMappingURL=kepa.css.map */
