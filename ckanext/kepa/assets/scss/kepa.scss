@@ -6,6 +6,15 @@
     align-items: center;
 }
 
+.align-center {
+    text-align: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
 .masthead {
     padding: 0 !important;
     background-color: $primary-color;
@@ -45,7 +54,7 @@
     background: url(/main-kepa-img.jpg) center/cover no-repeat;
 }
 
-.homepage .hero-placeholder .container{
+.homepage .hero-placeholder .container {
     min-height: 600px;
     width: 50%;
     display: flex;
@@ -55,8 +64,14 @@
     text-align: center;
 }
 
-.homepage .hero-placeholder .container img{
+.homepage .hero-placeholder .container img {
     max-height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+    .homepage .hero-placeholder .container img {
+        max-height: 150px;
+    }
 }
 
 .heading {
@@ -84,7 +99,7 @@
     border-radius: 0;
 }
 
-.search-form{
+.search-form {
     margin-bottom: 0;
     padding: 0;
 }
@@ -94,7 +109,7 @@
     border-radius: 0;
 }
 
-.tags{
+.tags {
     background-color: $white;
     height: 55px;
     padding: 0;
@@ -102,33 +117,33 @@
     align-items: center;
 }
 
-.tags h4{
+.tags h4 {
     margin: 0 !important;
     padding-left: 10px;
 }
 
-.tags a{
+.tags a {
     margin-bottom: 0 !important;
     margin-left: 10px;
 }
 
-.card{
+.card {
     width: 200px;
     align-items: center;
     text-align: center;
     background-color: $secondary-color;
 }
 
-.card a{
+.card a {
     color: $white;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;;
+    justify-content: center;
     text-decoration: none;
 }
 
-.card a h1{
+.card a h1 {
     font-size: $xxxl-size;
     margin-bottom: 0;
 }
@@ -139,11 +154,68 @@
     height: 100%;
 }
 
+@media screen and (max-width: 650px) {
+    .module-stats-center-flex {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .module-feeds {
+        min-height: 500px !important;
+    }
+}
+
 .module-feeds {
     min-height: 300px;
     background-color: $tertiary-color !important;
 }
 
-.module-feeds .container{
+.module-feeds .container {
     height: 200px;
+}
+
+.attribution {
+    color: $white;
+    margin-top: 20px;
+}
+
+.attribution h2 {
+    margin-bottom: 20px;
+}
+
+.address {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-right: 30px;
+    align-items: center;
+    color: $white;
+    font-weight: $bold;
+}
+
+.address img {
+    padding-right: 20px;
+    height: 50px;
+}
+
+.column a {
+    font-size: medium;
+}
+
+.btn-primary {
+    background-color: $secondary-color;
+    border: none;
+    outline: none;
+}
+
+.breadcrumb .home a i {
+    color: $secondary-color;
+}
+
+.site-footer {
+    padding: 40px;
+}
+
+.item-count {
+    background-color: $secondary-color !important;
 }

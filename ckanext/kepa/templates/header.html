@@ -102,13 +102,13 @@
           {% set group_type = h.default_group_type('group') %}
 
           {{ h.build_nav_main(
-          (dataset_type ~ '.search', h.humanize_entity_type('package', dataset_type, 'main nav') or _('DATASETS'),
+          (dataset_type ~ '.search', h.humanize_entity_type('package', dataset_type, 'main nav') or _('datasets').upper(),
           ["dataset", "resource"]),
           (org_type ~ '.index',
-          h.humanize_entity_type('organization', org_type, 'main nav') or _('ORGANIZATIONS'), ['organization']),
+          h.humanize_entity_type('organization', org_type, 'main nav') or _('organizations').upper(), ['organization']),
           (group_type ~ '.index',
-          h.humanize_entity_type('group', group_type, 'main nav') or _('GROUPS'), ['group']),
-          ('home.about', _('ABOUT US')) ) }}
+          h.humanize_entity_type('group', group_type, 'main nav') or _('groups').upper(), ['group']),
+          ('home.about', _('about us').upper()) ) }}
           {% endblock %}
         </ul>
 
