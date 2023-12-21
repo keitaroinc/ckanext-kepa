@@ -243,4 +243,19 @@
   text-shadow: none;
 }
 
+.language {
+  border-left: none !important;
+  height: 30px;
+}
+
+.lang-select {
+  width: 60px;
+}
+
+.list-unstyled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=kepa.css.map */
