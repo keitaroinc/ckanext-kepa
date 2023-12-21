@@ -17,7 +17,7 @@
 
 .masthead {
     padding: 0 !important;
-    background-color: $primary-color;
+    // background-color: $primary-color;
 }
 
 .masthead .logo-text {
@@ -104,9 +104,28 @@
     padding: 0;
 }
 
+.search-form .search-input button i {
+    color: $white;
+}
+
 .form-control {
     border: none;
     border-radius: 0;
+    margin-right: 0 !important;
+    width: 80%;
+}
+
+.site-search .btn {
+    background-color: white;
+    border: none;
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+}
+
+@media screen and (max-width: 980px) {
+    .form-control {
+        width: 100%;
+    }
 }
 
 .tags {
