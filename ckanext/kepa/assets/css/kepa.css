@@ -4,10 +4,6 @@
   align-items: center;
 }
 
-.align-center {
-  text-align: center;
-}
-
 .column {
   display: flex;
   flex-direction: column;
@@ -206,8 +202,14 @@
   align-items: center;
   color: white;
   font-weight: bolder;
+  margin-top: 30px;
 }
 
+@media screen and (max-width: 750px) {
+  .address {
+    justify-content: start;
+  }
+}
 .address img {
   padding-right: 20px;
   height: 50px;
