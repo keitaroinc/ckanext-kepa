@@ -79,6 +79,13 @@
   justify-content: center;
   align-items: center;
   min-height: 400px;
+  width: 80%;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-main-search {
@@ -123,19 +130,24 @@
 }
 .tags {
   background-color: white;
-  height: 55px;
+  min-height: 55px;
   padding: 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  max-height: 110px;
+  overflow: auto;
 }
 
 .tags h4 {
   margin: 0 !important;
   padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .tags a {
-  margin-bottom: 0 !important;
+  margin-bottom: 5px !important;
   margin-left: 10px;
 }
 
@@ -252,7 +264,7 @@
   width: 60px;
 }
 
-.list-unstyled {
+.account .list-unstyled {
   display: flex;
   justify-content: center;
   align-items: center;
