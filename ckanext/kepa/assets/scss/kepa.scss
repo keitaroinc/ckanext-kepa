@@ -78,7 +78,7 @@
     width: 80%;
 }
 
-.hero .container{
+.hero .container {
     @include center-flex;
 }
 
@@ -259,6 +259,8 @@
     width: 60px;
 }
 
-.account .list-unstyled {
-    @include center-flex;
+.account-masthead .container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
