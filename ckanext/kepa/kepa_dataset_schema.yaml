@@ -29,8 +29,6 @@ dataset_fields:
   - value: NotCompleted
     label: Not Completed
 
-
-
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
@@ -52,11 +50,9 @@ dataset_fields:
   validators: ignore_missing unicode_safe package_version_validator
   form_placeholder: '1.0'
 
-
 - field_name: separator
   display_snippet: separator.html
   label: Test Separator
-
 
 - field_name: author
   label: Author
@@ -82,8 +78,9 @@ dataset_fields:
   display_snippet: email.html
   display_email_name_field: author
 
-
-
+- field_name: separator
+  display_snippet: separator.html
+  label: Test Separator
 
 
 - field_name: maintainer
