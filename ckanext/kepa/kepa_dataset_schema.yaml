@@ -29,8 +29,6 @@ dataset_fields:
   - value: NotCompleted
     label: Not Completed
 
-
-
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
@@ -52,11 +50,9 @@ dataset_fields:
   validators: ignore_missing unicode_safe package_version_validator
   form_placeholder: '1.0'
 
-
 - field_name: separator
   display_snippet: separator.html
   label: Test Separator
-
 
 - field_name: author
   label: Author
@@ -67,23 +63,40 @@ dataset_fields:
   label: Organization
   preset: dataset_organization
 
-- field_name: position_name
-  label: Position Name
-  form_placeholder: eg. Head of Department
+- field_name: citation
+  label: Citation
+  repeating_subfields:
+  - field_name: originator
+    label: Originator
+    preset: multiple_text
+    form_blanks: 3
+    required: true
+  - field_name: publication_date
+    label: Publication Date
+    preset: date
+  - field_name: online_linkage
+    label: Online Linkage
+    preset: multiple_text
+    form_blanks: 2
 
-- field_name: voice
-  label: Voice
-  form_placeholder: eg. +38344 XXX-XXX
+- field_name: contact_address
+  label: Contact Address
+  repeating_subfields:
+  - field_name: address
+    label: Address
+    required: true
+  - field_name: city
+    label: City
+  - field_name: state
+    label: State
+  - field_name: postal_code
+    label: Postal Code
+  - field_name: country
+    label: Country
 
-- field_name: author_email
-  label: Author Email
-  form_placeholder: joe@example.com
-  display_property: dc:creator
-  display_snippet: email.html
-  display_email_name_field: author
-
-
-
+- field_name: separator
+  display_snippet: separator.html
+  label: Test Separator
 
 
 - field_name: maintainer
@@ -97,7 +110,6 @@ dataset_fields:
   display_property: dc:contributor
   display_snippet: email.html
   display_email_name_field: maintainer
-
 
 - field_name : spatial
   label: Spatial
