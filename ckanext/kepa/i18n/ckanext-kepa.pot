@@ -1,5 +1,5 @@
 # Translations template for ckanext-kepa.
-# Copyright (C) 2023 Keitaro
+# Copyright (C) 2023 ORGANIZATION
 # This file is distributed under the same license as the ckanext-kepa project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-kepa 0.0.1\n"
-"Report-Msgid-Bugs-To: blagoja.bozinovski@keitaro.com\n"
-"POT-Creation-Date: 2023-12-20 14:44+0100\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-12-26 18:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,19 +19,19 @@ msgstr ""
 
 #: ckanext/kepa/templates/footer.html:6
 msgid "The Kosovo dataportal"
-msgstr "Portali i të dhënave të Kosovës"
+msgstr ""
 
 #: ckanext/kepa/templates/footer.html:8
 msgid "About this website"
-msgstr "Rreth kësaj ueb-faqe"
+msgstr ""
 
 #: ckanext/kepa/templates/footer.html:9
 msgid "Open source on GitHub"
-msgstr "Burim i hapur në Github"
+msgstr ""
 
 #: ckanext/kepa/templates/footer.html:10
 msgid "Feedback on dataportal.xk"
-msgstr "Feedback mbi dataportal.xk"
+msgstr ""
 
 #: ckanext/kepa/templates/footer.html:11
 msgid "info@mail.xk"
@@ -39,15 +39,15 @@ msgstr ""
 
 #: ckanext/kepa/templates/footer.html:15
 msgid "Toolbox for sharing data"
-msgstr "Kutia e veglave për shpërndarjen e të dhënave"
+msgstr ""
 
 #: ckanext/kepa/templates/footer.html:17
 msgid "Documentation and services - Kosovo`s data portal"
-msgstr "Dokumentacioni dhe shërbimet - Portali i të dhënave të Kosovës"
+msgstr ""
 
 #: ckanext/kepa/templates/footer.html:18
 msgid "Guidance for open and shared data"
-msgstr "Udhëzim për të dhënat e hapura dhe shpërndara"
+msgstr ""
 
 #: ckanext/kepa/templates/footer.html:22
 msgid "Social"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ckanext/kepa/templates/footer.html:24
 msgid "Network Open Source and Data"
-msgstr "Rrjet i të dhënave dhe burimeve të hapura"
+msgstr ""
 
 #: ckanext/kepa/templates/footer.html:25
 msgid "Facebook"
@@ -77,86 +77,86 @@ msgstr ""
 msgid "Qeveria – Vlada - Government"
 msgstr ""
 
-#: ckanext/kepa/templates/header.html:11
+#: ckanext/kepa/templates/header.html:14
 msgid "Sysadmin settings"
 msgstr ""
 
-#: ckanext/kepa/templates/header.html:13
+#: ckanext/kepa/templates/header.html:16
 msgid "Admin"
 msgstr ""
 
-#: ckanext/kepa/templates/header.html:19
+#: ckanext/kepa/templates/header.html:22
 msgid "View profile"
-msgstr "Shiko Profilin"
+msgstr ""
 
-#: ckanext/kepa/templates/header.html:27
+#: ckanext/kepa/templates/header.html:30
 msgid " View dashboard"
-msgstr "Shiko dashboardin"
+msgstr ""
 
-#: ckanext/kepa/templates/header.html:29
+#: ckanext/kepa/templates/header.html:32
 msgid "Dashboard"
 msgstr ""
 
-#: ckanext/kepa/templates/header.html:35 ckanext/kepa/templates/header.html:37
+#: ckanext/kepa/templates/header.html:38 ckanext/kepa/templates/header.html:40
 msgid "Profile settings"
-msgstr "CIlësimet e profilit"
+msgstr ""
 
-#: ckanext/kepa/templates/header.html:42 ckanext/kepa/templates/header.html:44
+#: ckanext/kepa/templates/header.html:45 ckanext/kepa/templates/header.html:47
 msgid "Log out"
-msgstr "Shkyçu"
-
-#: ckanext/kepa/templates/header.html:51
-msgid "Account"
-msgstr "Llogaria"
+msgstr ""
 
 #: ckanext/kepa/templates/header.html:54
+msgid "Account"
+msgstr ""
+
+#: ckanext/kepa/templates/header.html:57
 msgid "Log in"
-msgstr "Kyçu"
+msgstr ""
 
-#: ckanext/kepa/templates/header.html:56
+#: ckanext/kepa/templates/header.html:59
 msgid "Register"
-msgstr "Regjistro"
+msgstr ""
 
-#: ckanext/kepa/templates/header.html:93
+#: ckanext/kepa/templates/header.html:96
 msgid "Toggle navigation"
-msgstr "Ndërro navigimin"
+msgstr ""
 
-#: ckanext/kepa/templates/header.html:105
+#: ckanext/kepa/templates/header.html:109
 msgid "datasets"
-msgstr "grupe të dhënash"
+msgstr ""
 
-#: ckanext/kepa/templates/header.html:108
+#: ckanext/kepa/templates/header.html:112
 msgid "organizations"
-msgstr "organizata"
-
-#: ckanext/kepa/templates/header.html:110
-msgid "groups"
-msgstr "grupe"
+msgstr ""
 
 #: ckanext/kepa/templates/header.html:114
+msgid "groups"
+msgstr ""
+
+#: ckanext/kepa/templates/header.html:115
 msgid "about us"
-msgstr "rreth nesh"
-
-#: ckanext/kepa/templates/header.html:119
-msgid "Search Datasets..."
-msgstr "Kërko grupe të dhënash"
-
-#: ckanext/kepa/templates/header.html:122
-#: ckanext/kepa/templates/home/snippets/search.html:11
-msgid "Search datasets"
-msgstr "Kërko grupe të dhënash"
+msgstr ""
 
 #: ckanext/kepa/templates/header.html:123
-msgid "Search datasets..."
-msgstr "Kërko grupe të dhënash"
+msgid "Search Datasets..."
+msgstr ""
 
-#: ckanext/kepa/templates/header.html:124
+#: ckanext/kepa/templates/header.html:126
+#: ckanext/kepa/templates/home/snippets/search.html:11
+msgid "Search datasets"
+msgstr ""
+
+#: ckanext/kepa/templates/header.html:127
+msgid "Search datasets..."
+msgstr ""
+
+#: ckanext/kepa/templates/header.html:128
 msgid "Submit"
 msgstr ""
 
 #: ckanext/kepa/templates/page.html:6
 msgid "Skip to main content"
-msgstr "Kalo në përmbajtjen kryesore"
+msgstr ""
 
 #: ckanext/kepa/templates/page.html:36
 msgid "Breadcrumb"
@@ -166,11 +166,11 @@ msgstr ""
 #: ckanext/kepa/templates/home/about.html:6
 #: ckanext/kepa/templates/home/about.html:16
 msgid "About"
-msgstr "Rreth"
+msgstr ""
 
 #: ckanext/kepa/templates/home/index.html:4
 msgid "Welcome"
-msgstr "Mirë se vini"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/about_text.html:1
 msgid ""
@@ -196,30 +196,29 @@ msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/promoted.html:8
 msgid "Welcome to CKAN"
-msgstr "Mirë se vini në CKAN"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/promoted.html:10
 msgid ""
 "This is a nice introductory paragraph about CKAN or the site in general. We "
 "don't have any copy to go here yet but soon we will"
-msgstr "Ky është një paragraf hyrës shum i mirë për CKAN apo për faqe në pergjithësi. "
-"Nuk kemi ndonjë momentalisht këtu por shum shpejtë do të kemi"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/promoted.html:19
 msgid "This is a featured section"
-msgstr "Ky është nje seksion i paraqitur"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/search.html:2
 msgid "Search..."
-msgstr "Kërko"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/search.html:8
 msgid "Search and explore data from Kosovo"
-msgstr "Kërko dhe eksploro të dhëna nga Kosova"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/search.html:16
 msgid "Search"
-msgstr "Kërko"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/search.html:21
 msgid "Popular tags"
@@ -227,25 +226,29 @@ msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/stats.html:8
 msgid "dataset"
-msgstr "Grup i të dhënave"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/stats.html:8
 msgid "Datasets"
-msgstr "Grup të dhënash"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/stats.html:14
 msgid "organization"
-msgstr "Organizata"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/stats.html:14
 msgid "Organizations"
-msgstr "Organizatat"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/stats.html:20
 msgid "group"
-msgstr "Grup"
+msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/stats.html:20
 msgid "Groups"
-msgstr "Grupe"
+msgstr ""
+
+#: ckanext/kepa/templates/snippets/language_selector.html:13
+msgid "Go"
+msgstr ""
 
