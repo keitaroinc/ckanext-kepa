@@ -50,10 +50,6 @@ dataset_fields:
   validators: ignore_missing unicode_safe package_version_validator
   form_placeholder: '1.0'
 
-- field_name: separator
-  display_snippet: separator.html
-  label: Test Separator
-
 - field_name: author
   label: Author
   form_placeholder: Joe Bloggs
@@ -63,40 +59,6 @@ dataset_fields:
   label: Organization
   preset: dataset_organization
 
-- field_name: citation
-  label: Citation
-  repeating_subfields:
-  - field_name: originator
-    label: Originator
-    preset: multiple_text
-    form_blanks: 3
-    required: true
-  - field_name: publication_date
-    label: Publication Date
-    preset: date
-  - field_name: online_linkage
-    label: Online Linkage
-    preset: multiple_text
-    form_blanks: 2
-
-- field_name: contact_address
-  label: Contact Address
-  repeating_subfields:
-  - field_name: address
-    label: Address
-    required: true
-  - field_name: city
-    label: City
-  - field_name: state
-    label: State
-  - field_name: postal_code
-    label: Postal Code
-  - field_name: country
-    label: Country
-
-- field_name: separator
-  display_snippet: separator.html
-  label: Test Separator
 
 
 - field_name: maintainer
