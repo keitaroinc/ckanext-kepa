@@ -1,7 +1,7 @@
 scheming_version: 2
 dataset_type: dataset
-about: A reimplementation of the default CKAN dataset schema
-about_url: http://github.com/ckan/ckanext-scheming
+about: KEPA custom metadata scheme
+about_url: https://github.com/keitaroinc/ckanext-kepa
 
 
 dataset_fields:
@@ -55,11 +55,28 @@ dataset_fields:
   form_placeholder: Joe Bloggs
   display_property: dc:creator
 
+- field_name: address
+  label: Contact Address
+
+- field_name: city
+  label: City
+
+- field_name: state
+  label: State
+
+- field_name: postal_code
+  label: Postal Code
+
+- field_name: country
+  label: Country
+
+- field_name: voice
+  label: Voice
+  form_placeholder: +38344 XXX-XXX
+
 - field_name: owner_org
   label: Organization
   preset: dataset_organization
-
-
 
 - field_name: maintainer
   label: Maintainer
@@ -96,7 +113,3 @@ resource_fields:
 - field_name: format
   label: Format
   preset: resource_format_autocomplete
-
-
-
-
