@@ -2,9 +2,6 @@
 
 # ckanext-kepa
 
-.. image:: https://github.com/keitaroinc/ckanext-kepa/workflows/Tests/badge.svg?branch=main
-    :target: https://github.com/keitaroinc/ckanext-kepa/actions
-
 The main theme CKAN extension for KEPA open data portal.
 
 
