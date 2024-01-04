@@ -16,7 +16,7 @@ dataset_fields:
   preset: dataset_slug
   form_placeholder: eg. my-dataset  
 
-- field_name: abstract
+- field_name: notes
   label: Abstract
   form_snippet: markdown.html
 
