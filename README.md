@@ -1,4 +1,4 @@
-[![Tests](https://github.com/Keitaro/ckanext-kepa/workflows/Tests/badge.svg?branch=main)](https://github.com/Keitaro/ckanext-kepa/actions)
+[![Tests](https://github.com/keitaroinc/ckanext-kepa/workflows/Tests/badge.svg?branch=main)](https://https://github.com/keitaroinc/ckanext-kepa/actions)
 
 # ckanext-kepa
 
@@ -6,11 +6,6 @@ The main theme CKAN extension for KEPA open data portal.
 
 
 ## Requirements
-
-**TODO:** For example, you might want to mention here which versions of CKAN this
-extension works with.
-
-If your extension works across different versions you can add the following table:
 
 Compatibility with core CKAN versions:
 
@@ -22,19 +17,9 @@ Compatibility with core CKAN versions:
 | 2.9             | not tested    |
 | 2.10            | Yes           |
 
-Suggested values:
-
-* "yes"
-* "not tested" - I can't think of a reason why it wouldn't work
-* "not yet" - there is an intention to get it working
-* "no"
 
 
 ## Installation
-
-**TODO:** Add any additional install steps to the list below.
-   For example installing any non-Python dependencies or adding any required
-   config settings.
 
 To install ckanext-kepa:
 
@@ -62,11 +47,6 @@ To install ckanext-kepa:
 
 None at present
 
-**TODO:** Document any optional config settings here. For example:
-
-	# The minimum number of hours to wait before re-checking a resource
-	# (optional, default: 24).
-	ckanext.kepa.some_setting = some_default_value
 
 
 ## Developer installation
