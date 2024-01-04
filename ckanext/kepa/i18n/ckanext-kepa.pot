@@ -1,14 +1,14 @@
 # Translations template for ckanext-kepa.
-# Copyright (C) 2023 ORGANIZATION
+# Copyright (C) 2024 ORGANIZATION
 # This file is distributed under the same license as the ckanext-kepa project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-kepa 0.0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-12-26 18:04+0100\n"
+"POT-Creation-Date: 2024-01-03 16:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -172,26 +172,40 @@ msgstr ""
 msgid "Welcome"
 msgstr ""
 
+#: ckanext/kepa/templates/home/layout3.html:11
+msgid ""
+"<h4>Kosovo's data portal for increased innovation</h4> <p> Data is a national"
+" resource for the development of society, industry and the public sector. It "
+"is a path to transparency, innovation and growth that benefits the entire "
+"society created by citizens, businesses and the government bodies together. "
+"</p>"
+msgstr ""
+
 #: ckanext/kepa/templates/home/snippets/about_text.html:1
 msgid ""
-"<p>CKAN is the world’s leading open-source data portal platform.</p> <p>CKAN "
-"is a complete out-of-the-box software solution that makes data accessible and"
-" usable – by providing tools to streamline publishing, sharing, finding and "
-"using data (including storage of data and provision of robust data APIs). "
-"CKAN is aimed at data publishers (national and regional governments, "
-"companies and organizations) wanting to make their data open and "
-"available.</p> <p>CKAN is used by governments and user groups worldwide and "
-"powers a variety of official and community data portals including portals for"
-" local, national and international government, such as the UK’s <a "
-"href=\"https://data.gov.uk\">data.gov.uk</a> and the United States <a "
-"href=\"https://catalog.data.gov/\">catalog.data.gov</a>, the Brazilian <a "
-"href=\"https://dados.gov.br/\">dados.gov.br</a>, Dutch and Netherland "
-"government portals, as well as city and municipal sites in the US, UK, "
-"Argentina, Finland and elsewhere.</p> <p>CKAN: <a "
-"href=\"https://ckan.org/\">https://ckan.org/</a><br /> CKAN Showcases: <a "
-"href=\"https://ckan.org/showcase\">https://ckan.org/showcase</a><br /> "
-"Features overview: <a "
-"href=\"https://ckan.org/features/\">https://ckan.org/features/</a></p>"
+"<h3>Mission</h3> <p>Our mission is to provide an advanced platform for the "
+"efficient collection, presentation and exchange of environmental and similar "
+"metadata from relevant institutions.</p> <p>The aim is to facilitate the "
+"collection and use of environmental data to support decision-making, "
+"researchers and the public in order to improve cooperation in the "
+"environmental field.</p> <p></p> <h3>Vision</h3> <p>Create an integrated "
+"system where institutions can share, standardize and use metadata "
+"appropriately. This portal aims to become the main source for environmental "
+"information, promoting transparency, institutional cooperation and improving "
+"the quality of environmental data.</p> <h3>The goal</h3> <ul> <li>Easy access"
+" to data and information for the purpose of taking measures for the "
+"protection of the environment, evaluating the results of these measures and "
+"providing information on the state of the environment to the public</li> "
+"<li>The necessary technical and scientific support for parties and "
+"institutions</li> <li>Increases efficiency and level of cooperation between "
+"parties and institutions</li> <li>Time, technical materials and human "
+"resources are saved</li> <li>Increase of the transparency for the work of "
+"institutions</li> <li>Compliance with EU regulations and standards</li> </ul>"
+" <h3>Founded</h3> <p>This portal was created by SIM/AMMK with full support "
+"from SEP</p> <p>Address: Luan Haradinaj Street, New Building of the "
+"Government of Kosovo (former Rilindja Media Palace)</p> <p>Floor XV/04, 10000"
+" Pristina, Republic of Kosovo</p> <p>Phone: 038 200 33 233 & 038 200 33 "
+"120</p> <a href = \"mailto: ammk@rks-gov.net\">Email: ammk@rks-gov.net</a>"
 msgstr ""
 
 #: ckanext/kepa/templates/home/snippets/promoted.html:8
