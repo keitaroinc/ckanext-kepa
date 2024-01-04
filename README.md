@@ -1,6 +1,9 @@
-[![Tests](https://github.com/Keitaro/ckanext-kepa/workflows/Tests/badge.svg?branch=main)](https://github.com/Keitaro/ckanext-kepa/actions)
+[![Tests](https://github.com/keitaroinc/ckanext-kepa/workflows/Tests/badge.svg?branch=main)](https://https://github.com/keitaroinc/ckanext-kepa/actions)
 
 # ckanext-kepa
+
+.. image:: https://github.com/keitaroinc/ckanext-kepa/workflows/Tests/badge.svg?branch=main
+    :target: https://github.com/keitaroinc/ckanext-kepa/actions
 
 The main theme CKAN extension for KEPA open data portal.
 
