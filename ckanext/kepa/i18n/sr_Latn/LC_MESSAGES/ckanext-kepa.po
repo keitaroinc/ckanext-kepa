@@ -134,7 +134,7 @@ msgstr "organizacije"
 
 #: ckanext/kepa/templates/header.html:114
 msgid "groups"
-msgstr "групе"
+msgstr "grupe"
 
 #: ckanext/kepa/templates/header.html:115
 msgid "about us"
@@ -301,5 +301,5 @@ msgstr "Grupe"
 
 #: ckanext/kepa/templates/snippets/language_selector.html:13
 msgid "Go"
-msgstr "Иди"
+msgstr "Idi"
 
