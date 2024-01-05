@@ -1,0 +1,305 @@
+# Serbian (Latin) translations for ckanext-kepa.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the ckanext-kepa
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-kepa 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-01-03 16:12+0100\n"
+"PO-Revision-Date: 2024-01-05 13:30+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sr_Latn\n"
+"Language-Team: sr_Latn <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ckanext/kepa/templates/footer.html:6
+msgid "The Kosovo dataportal"
+msgstr "Kosovski dataportal"
+
+#: ckanext/kepa/templates/footer.html:8
+msgid "About this website"
+msgstr "O ovoj veb stranici"
+
+#: ckanext/kepa/templates/footer.html:9
+msgid "Open source on GitHub"
+msgstr "Otvoreni kod na GitHub"
+
+#: ckanext/kepa/templates/footer.html:10
+msgid "Feedback on dataportal.xk"
+msgstr "povratne informacije o dataportal.xk"
+
+#: ckanext/kepa/templates/footer.html:11
+msgid "info@mail.xk"
+msgstr ""
+
+#: ckanext/kepa/templates/footer.html:15
+msgid "Toolbox for sharing data"
+msgstr "Kutija sa alatkama za deljenje podataka"
+
+#: ckanext/kepa/templates/footer.html:17
+msgid "Documentation and services - Kosovo`s data portal"
+msgstr "Dokumentacija i usluge - Kosovski portal podataka"
+
+#: ckanext/kepa/templates/footer.html:18
+msgid "Guidance for open and shared data"
+msgstr "Smernice za otvorene i deljene podatke"
+
+#: ckanext/kepa/templates/footer.html:22
+msgid "Social"
+msgstr ""
+
+#: ckanext/kepa/templates/footer.html:24
+msgid "Network Open Source and Data"
+msgstr "Mreža otvorenog koda i podataka"
+
+#: ckanext/kepa/templates/footer.html:25
+msgid "Facebook"
+msgstr ""
+
+#: ckanext/kepa/templates/footer.html:26
+msgid "Twitter"
+msgstr ""
+
+#: ckanext/kepa/templates/footer.html:35
+msgid "Republika e Kosovës"
+msgstr ""
+
+#: ckanext/kepa/templates/footer.html:36
+msgid "Republika Kosova - Republic of Kosovo"
+msgstr ""
+
+#: ckanext/kepa/templates/footer.html:37
+msgid "Qeveria – Vlada - Government"
+msgstr ""
+
+#: ckanext/kepa/templates/header.html:14
+msgid "Sysadmin settings"
+msgstr "Sistem administrator podešavanja"
+
+#: ckanext/kepa/templates/header.html:16
+msgid "Admin"
+msgstr "Administrator"
+
+#: ckanext/kepa/templates/header.html:22
+msgid "View profile"
+msgstr "Pogledaj profil"
+
+#: ckanext/kepa/templates/header.html:30
+msgid " View dashboard"
+msgstr "Prikaži komandnu tablu"
+
+#: ckanext/kepa/templates/header.html:32
+msgid "Dashboard"
+msgstr "Komandna tabla"
+
+#: ckanext/kepa/templates/header.html:38 ckanext/kepa/templates/header.html:40
+msgid "Profile settings"
+msgstr "Podešavanja profila"
+
+#: ckanext/kepa/templates/header.html:45 ckanext/kepa/templates/header.html:47
+msgid "Log out"
+msgstr "Odjavite se"
+
+#: ckanext/kepa/templates/header.html:54
+msgid "Account"
+msgstr "Račun"
+
+#: ckanext/kepa/templates/header.html:57
+msgid "Log in"
+msgstr "Prijavite se"
+
+#: ckanext/kepa/templates/header.html:59
+msgid "Register"
+msgstr "Registrovati se"
+
+#: ckanext/kepa/templates/header.html:96
+msgid "Toggle navigation"
+msgstr "Prebaci navigaciju"
+
+#: ckanext/kepa/templates/header.html:109
+msgid "datasets"
+msgstr "skupovi podataka"
+
+#: ckanext/kepa/templates/header.html:112
+msgid "organizations"
+msgstr "organizacije"
+
+#: ckanext/kepa/templates/header.html:114
+msgid "groups"
+msgstr "групе"
+
+#: ckanext/kepa/templates/header.html:115
+msgid "about us"
+msgstr "o nama"
+
+#: ckanext/kepa/templates/header.html:123
+msgid "Search Datasets..."
+msgstr "Pretraži skupove podataka..."
+
+#: ckanext/kepa/templates/header.html:126
+#: ckanext/kepa/templates/home/snippets/search.html:11
+msgid "Search datasets"
+msgstr "Pretraži skupove podataka"
+
+#: ckanext/kepa/templates/header.html:127
+msgid "Search datasets..."
+msgstr "Pretraži skupove podataka..."
+
+#: ckanext/kepa/templates/header.html:128
+msgid "Submit"
+msgstr ""
+
+#: ckanext/kepa/templates/page.html:6
+msgid "Skip to main content"
+msgstr "Pređi na glavni sadržaj"
+
+#: ckanext/kepa/templates/page.html:36
+msgid "Breadcrumb"
+msgstr ""
+
+#: ckanext/kepa/templates/home/about.html:3
+#: ckanext/kepa/templates/home/about.html:6
+#: ckanext/kepa/templates/home/about.html:16
+msgid "About"
+msgstr "O nama"
+
+#: ckanext/kepa/templates/home/index.html:4
+msgid "Welcome"
+msgstr "Dobrodošli"
+
+#: ckanext/kepa/templates/home/layout3.html:11
+msgid ""
+"<h4>Kosovo's data portal for increased innovation</h4> <p> Data is a "
+"national resource for the development of society, industry and the public"
+" sector. It is a path to transparency, innovation and growth that "
+"benefits the entire society created by citizens, businesses and the "
+"government bodies together. </p>"
+msgstr ""
+"<h4>Kosovski portal podataka za povećanje inovacija</h4> <p> Podaci su "
+"nacionalni resurs za razvoj društva, industrije i javnog sektora. To je put ka "
+"transparentnosti, inovativnosti i rastu koji koristi čitavom društvu stvorenom "
+"od strane građana, preduzeća i državnih organa zajedno."
+"</p>"
+
+
+#: ckanext/kepa/templates/home/snippets/about_text.html:1
+msgid ""
+"<h3>Mission</h3> <p>Our mission is to provide an advanced platform for "
+"the efficient collection, presentation and exchange of environmental and "
+"similar metadata from relevant institutions.</p> <p>The aim is to "
+"facilitate the collection and use of environmental data to support "
+"decision-making, researchers and the public in order to improve "
+"cooperation in the environmental field.</p> <p></p> <h3>Vision</h3> "
+"<p>Create an integrated system where institutions can share, standardize "
+"and use metadata appropriately. This portal aims to become the main "
+"source for environmental information, promoting transparency, "
+"institutional cooperation and improving the quality of environmental "
+"data.</p> <h3>The goal</h3> <ul> <li>Easy access to data and information "
+"for the purpose of taking measures for the protection of the environment,"
+" evaluating the results of these measures and providing information on "
+"the state of the environment to the public</li> <li>The necessary "
+"technical and scientific support for parties and institutions</li> "
+"<li>Increases efficiency and level of cooperation between parties and "
+"institutions</li> <li>Time, technical materials and human resources are "
+"saved</li> <li>Increase of the transparency for the work of "
+"institutions</li> <li>Compliance with EU regulations and standards</li> "
+"</ul> <h3>Founded</h3> <p>This portal was created by SIM/AMMK with full "
+"support from SEP</p> <p>Address: Luan Haradinaj Street, New Building of "
+"the Government of Kosovo (former Rilindja Media Palace)</p> <p>Floor "
+"XV/04, 10000 Pristina, Republic of Kosovo</p> <p>Phone: 038 200 33 233 & "
+"038 200 33 120</p> <a href = \"mailto: ammk@rks-gov.net\">Email: ammk"
+"@rks-gov.net</a>"
+msgstr ""
+"<h3>Misija</h3> <p>Naša misija je da obezbedimo naprednu platformu za "
+"efikasno prikupljanje, prezentaciju i razmenu ekoloških i sličnih "
+"metapodataka relevantnih institucija.</p> <p>Cilj je da se olakša "
+"prikupljanje i korišćenje podataka o životnoj sredini za podršku donošenju odluka, "
+"istraživačima i javnosti u cilju poboljšanja saradnje u oblasti "
+"životne sredine.</p> <p></p> <h3>Vizija</h3> <p>Stvoriti integrisani "
+"sistem gde institucije mogu da dele, standardizuju i koriste metapodatke "
+"na odgovarajući način. Ovaj portal ima za cilj da postane glavni izvor "
+"informacija o životnoj sredini, promovišući transparentnost, institucionalnu saradnju i poboljšanje "
+" kvaliteta podataka o životnoj sredini.</p> <h3>Cilj</h3> <ul> <li>Jednostavan pristup "
+"podacima i informacijama radi preduzimanja mera zaštite životne sredine, "
+"vrednovanja rezultata ovih mera i informisanja "
+"javnosti o stanju životne sredine.</li> "
+"<li>Neophodna tehnička i naučna podrška strankama i  "
+"institucijama</li> <li>Povećava efikasnost i nivo saradnje između stranaka "
+"i institucije </li> <li>Štede se vreme, tehnički materijali i "
+"ljudski resursi</li> <li>Povećanje transparentnosti rada "
+"institucija </li> <li>Usklađenost sa propisima i standardima EU</li> </ul>"
+" <h3>Osnovan</h3> <p>Ovaj portal je kreirao SIM/AMMK uz punu podršku "
+" od SEP</p> <p>Adresa: Ulica Luana Haradinaja, Nova zgrada "
+"Vlade Kosova (ranije Rilindja Media Palace)</p> <p>Sprat XV/04, 10000"
+" Priština, Republika Kosovo</p> <p>Telefon: 038 200 33 233 & 038 200 33 "
+"120</p> <a href = \"mailto: ammk@rks-gov.net\">Email: ammk@rks-gov.net</a>"
+
+
+#: ckanext/kepa/templates/home/snippets/promoted.html:8
+msgid "Welcome to CKAN"
+msgstr "Dobrodošli u CKAN"
+
+#: ckanext/kepa/templates/home/snippets/promoted.html:10
+msgid ""
+"This is a nice introductory paragraph about CKAN or the site in general. "
+"We don't have any copy to go here yet but soon we will"
+msgstr ""
+"Ovo je lep uvodni paragraf o CKAN-u ili sajtu uopšte."
+"Još nemamo nijedan primerak da idemo ovde, ali uskoro ćemo"
+
+#: ckanext/kepa/templates/home/snippets/promoted.html:19
+msgid "This is a featured section"
+msgstr "Ovo je istaknuti odeljak"
+
+#: ckanext/kepa/templates/home/snippets/search.html:2
+msgid "Search..."
+msgstr "Pretraga..."
+
+#: ckanext/kepa/templates/home/snippets/search.html:8
+msgid "Search and explore data from Kosovo"
+msgstr "Pretražite i istražite podatke sa Kosova"
+
+#: ckanext/kepa/templates/home/snippets/search.html:16
+msgid "Search"
+msgstr "Pretraga"
+
+#: ckanext/kepa/templates/home/snippets/search.html:21
+msgid "Popular tags"
+msgstr "Popularne oznake"
+
+#: ckanext/kepa/templates/home/snippets/stats.html:8
+msgid "dataset"
+msgstr "skup podataka"
+
+#: ckanext/kepa/templates/home/snippets/stats.html:8
+msgid "Datasets"
+msgstr "Skupovi podataka"
+
+#: ckanext/kepa/templates/home/snippets/stats.html:14
+msgid "organization"
+msgstr "organizacija"
+
+#: ckanext/kepa/templates/home/snippets/stats.html:14
+msgid "Organizations"
+msgstr "Organizacije"
+
+#: ckanext/kepa/templates/home/snippets/stats.html:20
+msgid "group"
+msgstr "grupa"
+
+#: ckanext/kepa/templates/home/snippets/stats.html:20
+msgid "Groups"
+msgstr "Grupe"
+
+#: ckanext/kepa/templates/snippets/language_selector.html:13
+msgid "Go"
+msgstr "Иди"
+
