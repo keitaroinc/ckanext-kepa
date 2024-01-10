@@ -270,4 +270,13 @@
   align-items: center;
 }
 
+.links p {
+  display: flex;
+  flex-direction: column;
+}
+
+.links p a {
+  margin-bottom: 5px;
+}
+
 /*# sourceMappingURL=kepa.css.map */

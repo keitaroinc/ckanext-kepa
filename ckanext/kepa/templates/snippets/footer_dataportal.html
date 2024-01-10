@@ -1,4 +1,8 @@
 {% if g.footer_dataportal %}
-  <h4 class="title">{{ _('The Kosovo dataportal') }}</h4>
-  {{ h.render_markdown(g.footer_dataportal) }}
+<div class="col-md-4 attribution">
+  <h2 class="title">{{ _('The Kosovo dataportal') }}</h2>
+  <div class="links">
+    {{ h.render_markdown(g.footer_dataportal) }}
+  </div>
+</div>
 {% endif %}
