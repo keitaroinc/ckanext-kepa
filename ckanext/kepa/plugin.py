@@ -13,4 +13,13 @@ class KepaPlugin(plugins.SingletonPlugin, DefaultTranslation):
         toolkit.add_template_directory(config_, "templates")
         toolkit.add_public_directory(config_, "public")
         toolkit.add_resource("assets", "kepa")
-   
+
+    def update_config_schema(self, schema):
+
+        ignore_missing = toolkit.get_validator('ignore_missing')
+        validators = [ignore_missing]
+        schema.update({
+            'footer_links': validators,
+        })
+
+        return schema
