@@ -1,5 +1,6 @@
 [![Tests](https://github.com/keitaroinc/ckanext-kepa/workflows/Tests/badge.svg?branch=main)](https://github.com/keitaroinc/ckanext-kepa/actions)
 
+
 # ckanext-kepa
 
 The main theme CKAN extension for KEPA open data portal.
@@ -45,7 +46,7 @@ To install ckanext-kepa:
 
 ## Config settings
 
-None at present
+1. On the web interface in /ckan-admin/config settings We can add the custom links that will appear in all 3 footer sections.
 
 
 
