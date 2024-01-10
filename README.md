@@ -1,4 +1,6 @@
-[![Tests](https://github.com/keitaroinc/ckanext-kepa/workflows/Tests/badge.svg?branch=main)](https://github.com/keitaroinc/ckanext-kepa/actions)
+.. image:: https://github.com/keitaroinc/ckanext-kepa/workflows/Tests/badge.svg?branch=main
+    :target: https://github.com/keitaroinc/ckanext-kepa/actions
+
 
 # ckanext-kepa
 
@@ -45,7 +47,7 @@ To install ckanext-kepa:
 
 ## Config settings
 
-None at present
+1. On the web interface in /ckan-admin/config settings We can add the custom links that will appear in all 3 footer sections.
 
 
 
