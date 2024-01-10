@@ -1,5 +1,4 @@
-.. image:: https://github.com/keitaroinc/ckanext-kepa/workflows/Tests/badge.svg?branch=main
-    :target: https://github.com/keitaroinc/ckanext-kepa/actions
+[![Tests](https://github.com/keitaroinc/ckanext-kepa/workflows/Tests/badge.svg?branch=main)](https://github.com/keitaroinc/ckanext-kepa/actions)
 
 
 # ckanext-kepa
