@@ -2,30 +2,9 @@
   <div class="container">
     {% block footer_content %}
     <div class="row">
-      <div class="col-md-4 attribution">
-        <h2>{{_('The Kosovo dataportal')}} </h2>
-        <div class="column">
-          <a class="" href="http://ckan.org">{{_('About this website')}}</a>
-          <a class="" href="http://ckan.org">{{_('Open source on GitHub')}}</a>
-          <a class="" href="http://ckan.org">{{_('Feedback on dataportal.xk')}}</a>
-          <a class="" href="http://ckan.org">{{_('info@mail.xk')}}</a>
-        </div>
-      </div>
-      <div class="col-md-4 attribution">
-        <h2>{{_('Toolbox for sharing data')}}</h2>
-        <div class="column">
-          <a class="" href="http://ckan.org">{{_('Documentation and services - Kosovo`s data portal')}}</a>
-          <a class="" href="http://ckan.org">{{_('Guidance for open and shared data')}}</a>
-        </div>
-      </div>
-      <div class="col-md-4 attribution">
-        <h2>{{_('Social')}}</h2>
-        <div class="column">
-          <a class="" href="http://ckan.org">{{_('Network Open Source and Data')}}</a>
-          <a class="" href="http://ckan.org">{{_('Facebook')}}</a>
-          <a class="" href="http://ckan.org">{{_('Twitter')}}</a>
-        </div>
-      </div>
+        {% include "/snippets/footer_dataportal.html" %}
+        {% include "/snippets/footer_toolbox.html" %}
+        {% include "/snippets/footer_social.html" %}
     </div>
 
   </div>
@@ -38,7 +17,6 @@
     </span>
   </div>
 </footer>
-
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {

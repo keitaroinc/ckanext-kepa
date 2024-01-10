@@ -264,3 +264,11 @@
     justify-content: end;
     align-items: center;
 }
+
+.links p{
+    @include column;
+}
+
+.links p a{
+    margin-bottom: 5px;
+}
