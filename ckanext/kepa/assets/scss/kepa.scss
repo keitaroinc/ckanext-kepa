@@ -67,15 +67,19 @@
 }
 
 .search-form .heading {
-    color: $white;
+    color: $text-primary;
     font-size: $xxl-size;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .search-container {
     @include center-flex;
     min-height: 400px;
-    width: 80%;
+    background: rgb(255 255 255 / 50%);
+    padding: 25px;
+}
+
+.search-form .search-input.search-giant input {
+    border: 1px solid lightgray;
 }
 
 .hero .container {
@@ -133,6 +137,7 @@
     padding: 15px;
     max-height: 110px;
     overflow: auto;
+    border: 1px solid lightgray;
 }
 
 .tags h4 {
@@ -153,7 +158,7 @@
 }
 
 .card a {
-    color: $white;
+    color: $text-primary;
     height: 100%;
     @include column;
     justify-content: center;
@@ -265,10 +270,10 @@
     align-items: center;
 }
 
-.links p{
+.links p {
     @include column;
 }
 
-.links p a{
+.links p a {
     margin-bottom: 5px;
 }
