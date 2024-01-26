@@ -127,7 +127,7 @@
     }
 }
 
-.tags {
+.search-container .tags {
     background-color: $white;
     min-height: 55px;
     padding: 0;
@@ -140,13 +140,13 @@
     border: 1px solid lightgray;
 }
 
-.tags h4 {
+.search-container .tags h4 {
     margin: 0 !important;
     padding-left: 10px;
     padding-bottom: 10px;
 }
 
-.tags a {
+.search-container .tags a {
     margin-bottom: 5px !important;
     margin-left: 10px;
 }
@@ -261,7 +261,11 @@
 }
 
 .lang-select {
-    width: 60px;
+    width: 80px;
+}
+
+.lang-container .select2-choice > .select2-chosen{
+    margin-right: 0 !important;
 }
 
 .account-masthead .container {
@@ -276,4 +280,25 @@
 
 .links p a {
     margin-bottom: 5px;
+}
+
+#dataset-resources{
+    margin-top: 15px;
+}
+
+.additional-info{
+    margin-top: 30px;
+}
+
+.additional-info h3{
+    margin-bottom: 20px;
+}
+
+
+.tag-list{
+    margin: 0;
+}
+
+.add-to-group .btn-primary{
+    margin-top: 20px;
 }
