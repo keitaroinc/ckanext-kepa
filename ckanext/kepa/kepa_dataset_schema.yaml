@@ -17,7 +17,7 @@ dataset_fields:
   form_placeholder: eg. my-dataset  
 
 - field_name: notes
-  label: Abstract
+  label: Description
   form_snippet: markdown.html
 
 - field_name: status
