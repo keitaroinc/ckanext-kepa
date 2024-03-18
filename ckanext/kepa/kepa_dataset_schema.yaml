@@ -20,15 +20,6 @@ dataset_fields:
   label: Description
   form_snippet: markdown.html
 
-- field_name: status
-  label: Status
-  preset: select
-  choices :
-  - value: Completed
-    label: Completed
-  - value: NotCompleted
-    label: Not Completed
-
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
@@ -45,55 +36,85 @@ dataset_fields:
   display_property: foaf:homepage
   display_snippet: link.html
 
+- field_name: theme
+  label: Theme
+
 - field_name: version
   label: Version
   validators: ignore_missing unicode_safe package_version_validator
   form_placeholder: '1.0'
 
-- field_name: author
-  label: Author
+- field_name: publisher_name
+  label: Publisher
   form_placeholder: Joe Bloggs
-  display_property: dc:creator
 
-- field_name: address
-  label: Contact Address
+- field_name: publisher_email
+  label: Publisher email
+  display_snippet: email.html
+  form_placeholder: joe.blogs@example.com
 
-- field_name: city
-  label: City
+- field_name: contact_uri
+  label: Publisher Contact
 
-- field_name: state
-  label: State
-
-- field_name: postal_code
-  label: Postal Code
-
-- field_name: country
-  label: Country
-
-- field_name: voice
-  label: Voice
-  form_placeholder: +38344 XXX-XXX
+- field_name: publisher_type
+  label: Type
 
 - field_name: owner_org
   label: Organization
   preset: dataset_organization
 
-- field_name: maintainer
+- field_name: contact_name
   label: Maintainer
   form_placeholder: Joe Bloggs
   display_property: dc:contributor
 
-- field_name: maintainer_email
+- field_name: contact_email
   label: Maintainer Email
-  form_placeholder: joe@example.com
-  display_property: dc:contributor
+  form_placeholder: joe.blogs@example.com
   display_snippet: email.html
-  display_email_name_field: maintainer
 
 - field_name : spatial
   label: Spatial
   form_placeholder : {\"type\": \"Point\", \"coordinates\": [8.609762390208658, 47.40381297881529]}
 
+- field_name: spatial_resolution_in_meters
+  label: Spatial resolution in meters
+
+- field_name: frequency
+  label: Update Frequency
+  preset: select
+  form_placeholder: "Select update frequency like: weekly or monthly"
+  choices:
+  - value: daily
+    label: Daily
+  - value: weekly
+    label: Weekly
+  - value: monthly
+    label: Monthly
+  - value: yearly
+    label: Yearly
+  - value: ad-hoc
+    label: Ad-hoc
+  - value: never
+    label: Never
+
+- field_name: conforms_to
+  label: Conforms to
+
+- field_name: documentation
+  label: Documentation
+
+- field_name: temporal_start
+  form_placeholder : YYYY-MM-DD
+  label: Temporal Start
+
+- field_name: temporal_end
+  form_placeholder : YYYY-MM-DD
+  label: Temporal End
+
+- field_name: temporal_resolution
+  label: Temporal Resolution
+  
 
 resource_fields:
 
