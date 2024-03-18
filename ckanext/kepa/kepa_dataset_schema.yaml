@@ -105,7 +105,7 @@ dataset_fields:
   label: Documentation
 
 - field_name: temporal
-  form_placeholder : "YYYY-MM-DD/YYYY-MM-DD",
+  form_placeholder : YYYY-MM-DD/YYYY-MM-DD
   label: Temporal
   help_text: Start date and end date
 
