@@ -104,10 +104,13 @@ dataset_fields:
 - field_name: documentation
   label: Documentation
 
-- field_name: temporal
-  form_placeholder : YYYY-MM-DD/YYYY-MM-DD
-  label: Temporal
-  help_text: Start date and end date
+- field_name: temporal_start
+  form_placeholder : YYYY-MM-DD
+  label: Temporal Start
+
+- field_name: temporal_end
+  form_placeholder : YYYY-MM-DD
+  label: Temporal End
 
 - field_name: temporal_resolution
   label: Temporal Resolution
