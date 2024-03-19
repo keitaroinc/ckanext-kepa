@@ -1,5 +1,5 @@
 include README.rst
 include LICENSE
 include requirements.txt
-recursive-include ckanext/kepa *.html *.json *.js *.less *.css *.mo *.yml *.config *.png *.jpeg *.svg *.po *.pot *.jpg *.map *.eot *.svg *.ttf *.woff *.woff2 *.yaml
+recursive-include ckanext/kepa *.html *.json *.js *.less *.css *.mo *.yml *.config *.png *.jpeg *.svg *.po *.pot *.jpg *.map *.eot *.svg *.ttf *.woff *.woff2 *.yaml *.ico
 recursive-include ckanext/kepa/migration *.ini *.py *.mako
