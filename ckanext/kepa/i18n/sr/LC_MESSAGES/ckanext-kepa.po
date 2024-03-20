@@ -254,6 +254,10 @@ msgstr "група"
 msgid "Groups"
 msgstr "Групе"
 
+#: ckanext/kepa/templates/header.html:81
+msgid "Kosovo environmental information"
+msgstr "Информације о животној средини Косова"
+
 #: ckanext/kepa/templates/snippets/language_selector.html:13
 msgid "Go"
 msgstr "Иди"
