@@ -257,6 +257,10 @@ msgstr "Grupe"
 msgid "Go"
 msgstr "Shkoj"
 
+#: ckanext/kepa/templates/header.html:81
+msgid "Kosovo environmental information"
+msgstr "Informatat mjedisore të Kosovës"
+
 #: ckanext/kepa/templates/home/layout3.html:11
 msgid ""
 "<h4>Kosovo's data portal for increased innovation</h4> <p> Data is a national"
