@@ -37,24 +37,39 @@ dataset_fields:
   display_snippet: link.html
 
 - field_name: theme
-  label: Theme
+  label: 
+    en: Theme
+    sq: Tema
+    sr_Latn: Tema
 
 - field_name: version
-  label: Version
+  label: 
+    en: Version
+    sq: Versioni
+    sr_Latn: Verzija
   validators: ignore_missing unicode_safe package_version_validator
   form_placeholder: '1.0'
 
 - field_name: publisher_name
-  label: Publisher
+  label: 
+    en: Publisher
+    sq: Botues
+    sr_Latn: Izdavač
   form_placeholder: Joe Bloggs
 
 - field_name: publisher_email
-  label: Publisher email
+  label: 
+    en: Publisher email
+    sq: Email i botuesit
+    sr_Latn: Email izdavača
   display_snippet: email.html
   form_placeholder: joe.blogs@example.com
 
 - field_name: contact_uri
-  label: Publisher Contact
+  label: 
+    en: Publisher Contact
+    sq: Kontakti i botuesit
+    sr_Latn: Kontakt izdavača
 
 - field_name: publisher_type
   label: Type
@@ -78,42 +93,77 @@ dataset_fields:
   form_placeholder : {\"type\": \"Point\", \"coordinates\": [8.609762390208658, 47.40381297881529]}
 
 - field_name: spatial_resolution_in_meters
-  label: Spatial resolution in meters
+  label: 
+    en: Spatial resolution in meters
+    sq: Rezolucioni hapësinor në metra
+    sr_Latn: Prostorna rezolucija u metrima
 
 - field_name: frequency
-  label: Update Frequency
+  label: 
+    en: Update Frequency
+    sq: Frekuenca e përditësimit
+    sr_Latn: Učestalost ažuriranja
   preset: select
-  form_placeholder: "Select update frequency like: weekly or monthly"
   choices:
   - value: daily
-    label: Daily
+    label: 
+      en: Daily
+      sq: Ditore
+      sr_Latn: Dnevno
   - value: weekly
-    label: Weekly
+    label: 
+      en: weekly
+      sq: Javore
+      sr_Latn: Nedeljno
   - value: monthly
-    label: Monthly
+    label: 
+      en: Monthly
+      sq: Mujore
+      sr_Latn: Mesečno
   - value: yearly
-    label: Yearly
+    label: 
+      en: Yearly
+      sq: Vjetore
+      sr_Latn: Godišnje
   - value: ad-hoc
-    label: Ad-hoc
+    label: 
+      en: Ad-hoc
+      sq: Ad-hoc
+      sr_Latn: Ad-hoc
   - value: never
     label: Never
 
 - field_name: conforms_to
-  label: Conforms to
+  label: 
+    en: Conforms to
+    sq: Përputhet me
+    sr_Latn: U skladu sa
 
 - field_name: documentation
-  label: Documentation
+  label: 
+    en: Documentation
+    sq: Dokumentacioni
+    sr_Latn: Dokumentacija
 
 - field_name: temporal_start
   form_placeholder : YYYY-MM-DD
-  label: Temporal Start
+  label: 
+    en: Temporal Start
+    sq: Fillimi i përkohshëm
+    sr_Latn: Vremenski početak
 
 - field_name: temporal_end
   form_placeholder : YYYY-MM-DD
-  label: Temporal End
+  label: 
+    en: Temporal End
+    sq: Fundi i përkohshëm
+    sr_Latn: Vremenski kraj
 
 - field_name: temporal_resolution
-  label: Temporal Resolution
+  label: 
+    en: Temporal Resolution
+    sq: Rezoluta e përkohshme
+    sr_Latn: Vremenska rezolucija
   
 
 resource_fields:
