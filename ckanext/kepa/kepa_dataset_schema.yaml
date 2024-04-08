@@ -41,6 +41,38 @@ dataset_fields:
     en: Theme
     sq: Tema
     sr_Latn: Tema
+  preset: select
+  choices:
+  - value: http://publications.europa.eu/resource/authority/data-theme/AGRI
+    label: 
+      en: Agriculture, fisheries, forestry and food
+      sq: Bujqësi, peshkim, pylltari dhe ushqim
+      sr_Latn: Poljoprivreda, ribarstvo, šumarstvo i hrana
+  - value: http://publications.europa.eu/resource/authority/data-theme/ENER
+    label: 
+      en: Energy
+      sq: Energjisë
+      sr_Latn: Energija
+  - value: http://publications.europa.eu/resource/authority/data-theme/ENVI
+    label: 
+      en: Environment
+      sq: Mjedisi
+      sr_Latn: Životna sredina
+  - value: http://publications.europa.eu/resource/authority/data-theme/HEAL
+    label: 
+      en: Health
+      sq: Shëndeti
+      sr_Latn: Zdravlje
+  - value: http://publications.europa.eu/resource/authority/data-theme/REGI
+    label: 
+      en: Regions and cities
+      sq: Rajonet dhe qytetet
+      sr_Latn: Regioni i gradovi
+  - value: http://publications.europa.eu/resource/authority/data-theme/INTR
+    label: 
+      en: International issues
+      sq: Çështjet ndërkombëtare
+      sr_Latn: Međunarodna pitanja
 
 - field_name: version
   label: 
@@ -70,9 +102,6 @@ dataset_fields:
     en: Publisher Contact
     sq: Kontakti i botuesit
     sr_Latn: Kontakt izdavača
-
-- field_name: publisher_type
-  label: Type
 
 - field_name: owner_org
   label: Organization
