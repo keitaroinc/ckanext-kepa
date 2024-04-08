@@ -103,9 +103,6 @@ dataset_fields:
     sq: Kontakti i botuesit
     sr_Latn: Kontakt izdavača
 
-- field_name: publisher_type
-  label: Type
-
 - field_name: owner_org
   label: Organization
   preset: dataset_organization
