@@ -48,6 +48,16 @@ dataset_fields:
       en: Agriculture, fisheries, forestry and food
       sq: Bujqësi, peshkim, pylltari dhe ushqim
       sr_Latn: Poljoprivreda, ribarstvo, šumarstvo i hrana
+  - value: http://publications.europa.eu/resource/authority/data-theme/ECON
+    label: 
+      en: Economy and finance
+      sq: Ekonomia dhe financat
+      sr_Latn: Ekonomija i finansije
+  - value: http://publications.europa.eu/resource/authority/data-theme/EDUC
+    label: 
+      en: Education, culture and sport
+      sq: Arsimi, kultura dhe sporti
+      sr_Latn: Obrazovanje, kultura i sport
   - value: http://publications.europa.eu/resource/authority/data-theme/ENER
     label: 
       en: Energy
@@ -58,21 +68,47 @@ dataset_fields:
       en: Environment
       sq: Mjedisi
       sr_Latn: Životna sredina
+  - value: http://publications.europa.eu/resource/authority/data-theme/GOVE
+    label: 
+      en: Government and public sector
+      sq: Qeveria dhe sektori publik
+      sr_Latn: Vlada i javni sektor
   - value: http://publications.europa.eu/resource/authority/data-theme/HEAL
     label: 
       en: Health
       sq: Shëndeti
       sr_Latn: Zdravlje
-  - value: http://publications.europa.eu/resource/authority/data-theme/REGI
-    label: 
-      en: Regions and cities
-      sq: Rajonet dhe qytetet
-      sr_Latn: Regioni i gradovi
   - value: http://publications.europa.eu/resource/authority/data-theme/INTR
     label: 
       en: International issues
       sq: Çështjet ndërkombëtare
       sr_Latn: Međunarodna pitanja
+  - value: http://publications.europa.eu/resource/authority/data-theme/JUST
+    label: 
+      en: Justice, legal system and public safety
+      sq: Drejtësia, sistemi ligjor dhe siguria publike
+      sr_Latn: Pravosuđe, pravni sistem i javna bezbednost
+  - value: http://publications.europa.eu/resource/authority/data-theme/SOCI
+    label: 
+      en: Population and society
+      sq: Popullsia dhe shoqëria
+      sr_Latn: Stanovništvo i društvo
+  - value: http://publications.europa.eu/resource/authority/data-theme/REGI
+    label: 
+      en: Regions and cities
+      sq: Rajonet dhe qytetet
+      sr_Latn: Regioni i gradovi
+  - value: http://publications.europa.eu/resource/authority/data-theme/TECH
+    label: 
+      en: Science and technology
+      sq: Shkencë dhe Teknologji
+      sr_Latn: Nauka i tehnologija
+  - value: http://publications.europa.eu/resource/authority/data-theme/TRAN
+    label: 
+      en: Transport
+      sq: Transporti
+      sr_Latn: Transport
+
 
 - field_name: version
   label: 
