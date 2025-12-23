@@ -6,19 +6,64 @@ about_url: https://github.com/keitaroinc/ckanext-kepa
 
 dataset_fields:
 
-- field_name: title
-  label: Title
-  preset: title
-  form_placeholder: eg. A descriptive title
+- field_name: title_translated
+  label:
+    en: Title
+    sq: Titulli
+    sr_Latn: Naslov
+  fluent_form_label:
+    en:
+      en: Title (English)
+      sq: Titulli (Anglisht)
+      sr_Latn: Naslov (Engleski)
+    sq:
+      en: Title (Albanian)
+      sq: Titulli (Shqip)
+      sr_Latn: Naslov (Albanski)
+    sr_Latn:
+      en: Title (Serbian)
+      sq: Titulli (Serbisht)
+      sr_Latn: Naslov (Srpski)
+  preset: fluent_core_translated
+  required: true
 
 - field_name: name
   label: URL
   preset: dataset_slug
   form_placeholder: eg. my-dataset  
 
-- field_name: notes
-  label: Description
-  form_snippet: markdown.html
+- field_name: notes_translated
+  label:
+    en: Description
+    sq: Përshkrimi
+    sr_Latn: Opis
+  fluent_form_label:
+    en:
+      en: Description (English)
+      sq: Përshkrimi (Anglisht)
+      sr_Latn: Opis (Engleski)
+    sq:
+      en: Description (Albanian)
+      sq: Përshkrimi (Shqip)
+      sr_Latn: Opis (Albanski)
+    sr_Latn:
+      en: Description (Serbian)
+      sq: Përshkrimi (Serbisht)
+      sr_Latn: Opis (Srpski)
+  fluent_help_text:
+    en:
+      en: "An account of the dataset, in English. A description may include but is not limited to: an abstract, a table of contents, or a free-text account of the resource."
+      sq: "Një përshkrim i të dhënave, në anglisht. Një përshkrim mund të përfshijë, por nuk kufizohet në: një përmbledhje, një tabelë përmbajtjesh, ose një llogari me tekst të lirë të burimit."
+      sr_Latn: "Opis skupa podataka, na engleskom jeziku. Opis može uključivati, ali nije ograničen na: sažetak, sadržaj"
+    sq:
+      en: "An account of the dataset, in French. A description may include but is not limited to: an abstract, a table of contents, or a free-text account of the resource."
+      sq: "Një përshkrim i të dhënave, në shqip. Një përshkrim mund të përfshijë, por nuk kufizohet në: një përmbledhje, një tabelë përmbajtjesh, ose një llogari me tekst të lirë të burimit."
+      sr_Latn: "Opis skupa podataka, na srpskom jeziku. Opis može uključivati, ali nije ograničen na: sažetak, sadržaj"
+    sr_Latn:
+      en: "An account of the dataset, in English. A description may include but is not limited to: an abstract, a table of contents, or a free-text account of the resource."
+      sq: "Një përshkrim i të dhënave, në anglisht. Një përshkrim mund të përfshijë, por nuk kufizohet në: një përmbledhje, një tabelë përmbajtjesh, ose një logari me tekst të lirë të burimit."
+      sr_Latn: "Opis skupa podataka, na engleskom jeziku. Opis može uključivati, ali nije ograničen na: sažetak, sadržaj"
+  preset: fluent_core_translated
 
 - field_name: tag_string
   label: Tags
