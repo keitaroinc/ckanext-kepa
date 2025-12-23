@@ -2,6 +2,7 @@ scheming_version: 2
 dataset_type: dataset
 about: KEPA custom metadata scheme
 about_url: https://github.com/keitaroinc/ckanext-kepa
+form_languages: [en, sq, sr_Latn]
 
 
 dataset_fields:
@@ -64,6 +65,7 @@ dataset_fields:
       sq: "Një përshkrim i të dhënave, në anglisht. Një përshkrim mund të përfshijë, por nuk kufizohet në: një përmbledhje, një tabelë përmbajtjesh, ose një logari me tekst të lirë të burimit."
       sr_Latn: "Opis skupa podataka, na engleskom jeziku. Opis može uključivati, ali nije ograničen na: sažetak, sadržaj"
   preset: fluent_core_translated
+  form_snippet: fluent_markdown.html
 
 - field_name: tag_string
   label: Tags
