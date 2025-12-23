@@ -328,3 +328,81 @@ msgstr ""
 "može biti katalogiziranje skupova podataka za određeni projekat ili tim, ili na"
 "posebna tema, ili kao veoma jednostavan način da se pomogne ljudima da pretražuju i pronađu"
 "vaše objavljene skupove podataka."
+
+#: ckanext/contact/recaptcha.py:39
+msgid "Action mismatch"
+msgstr "Akcija se ne poklapa"
+
+#: ckanext/contact/routes/_helpers.py:47
+msgid "Recaptcha check failed, please try again."
+msgstr "Provera Recaptcha nije uspela, molimo pokušajte ponovo."
+
+#: ckanext/contact/routes/contact.py:39
+msgid "Not authorized to use contact form"
+msgstr "Niste ovlašćen za korišćenje kontakt forme"
+
+#: ckanext/contact/theme/assets/modules/modal-contact.js:22
+msgid ""
+"Thank you for contacting us, and we will try and reply as soon as "
+"possible.<br />Unfortunately due to the number of enquiries we receive, "
+"we cannot always reply in person to every one."
+msgstr ""
+"Hvala što ste nas kontaktirali, i pokušaćemo da odgovorimo što pre "
+"moguće.<br />Nažalost, zbog broja upita koje dobijamo, "
+"ne možemo uvek odgovoriti lično svima."
+
+#: ckanext/contact/theme/assets/modules/modal-contact.js:25
+msgid "Sorry, there was an error sending the email. Please try again later."
+msgstr "Žao nam je, došlo je do greške prilikom slanja e-pošte. Molimo pokušajte ponovo kasnije."
+
+#: ckanext/contact/theme/templates/contact/form.html:6
+#: ckanext/contact/theme/templates/contact/snippets/modal_link.html:6
+#: ckanext/contact/theme/templates/contact/snippets/modal_link.html:8
+#: ckanext/contact/theme/templates/header.html:5
+#: ckanext/contact/theme/templates/header.html:9
+msgid "Contact"
+msgstr "Kontakt"
+
+#: ckanext/contact/theme/templates/ajax_snippets/contact_form.html:20
+msgid "Contact form"
+msgstr "Kontakt obrazac"
+
+#: ckanext/contact/theme/templates/contact/form.html:16
+msgid "Contact us"
+msgstr "Kontaktujte nas"
+
+#: ckanext/contact/theme/templates/contact/success.html:18
+msgid "Contact Us"
+msgstr "Kontaktujte nas"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:17
+msgid "Questions? Comments? We are always glad to hear from you!"
+msgstr "Pitanja? Komentari? Uvek nam je drago da vas čujemo!"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:22
+msgid "Contact Name"
+msgstr "Ime kontakta"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:25
+msgid "Email"
+msgstr "E-mail"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:29
+msgid "Your Request"
+msgstr "Vas zahtjev"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:35
+msgid "What do you have to tell us?"
+msgstr "Šta imaš da nam kažeš?"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:40
+msgid "Submit"
+msgstr "Poslati"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:29
+msgid "Subject"
+msgstr "Predmet"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:31
+msgid "Optional subject"
+msgstr "Opcioni predmet e-maila"

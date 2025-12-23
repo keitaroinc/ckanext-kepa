@@ -324,3 +324,81 @@ msgstr ""
 "së Kosovës (fish Pallati i Mediave Rilindja)</p> <p>Kati XV/04, 10000"
 " Prishtinë,Republika e Kosovës</p> <p>Telefoni: 038 200 33 233 & 038 200 33 "
 "120</p> <a href = \"mailto: ammk@rks-gov.net\">Email: ammk@rks-gov.net</a>"
+
+#: ckanext/contact/recaptcha.py:39
+msgid "Action mismatch"
+msgstr "Mospërputhja e veprimeve"
+
+#: ckanext/contact/routes/_helpers.py:47
+msgid "Recaptcha check failed, please try again."
+msgstr "Kontrolli i recaptcha dështoi, ju lutemi provoni përsëri."
+
+#: ckanext/contact/routes/contact.py:39
+msgid "Not authorized to use contact form"
+msgstr "Nuk është i autorizuar për të përdorur formularin e kontaktit"
+
+#: ckanext/contact/theme/assets/modules/modal-contact.js:22
+msgid ""
+"Thank you for contacting us, and we will try and reply as soon as "
+"possible.<br />Unfortunately due to the number of enquiries we receive, "
+"we cannot always reply in person to every one."
+msgstr ""
+"Faleminderit që na kontaktuat dhe ne do të përpiqemi të përgjigjemi sa më shpejt"
+"e mundur.<br />Fatkeqësisht për shkak të numrit të pyetjeve që marrim, "
+"Ne nuk mund t'i përgjigjemi gjithmonë personalisht secilit."
+
+#: ckanext/contact/theme/assets/modules/modal-contact.js:25
+msgid "Sorry, there was an error sending the email. Please try again later."
+msgstr "Na vjen keq, ka pasur një gabim gjatë dërgimit të emailit. Ju lutemi provoni përsëri më vonë."
+
+#: ckanext/contact/theme/templates/contact/form.html:6
+#: ckanext/contact/theme/templates/contact/snippets/modal_link.html:6
+#: ckanext/contact/theme/templates/contact/snippets/modal_link.html:8
+#: ckanext/contact/theme/templates/header.html:5
+#: ckanext/contact/theme/templates/header.html:9
+msgid "Contact"
+msgstr "Kontaktoni"
+
+#: ckanext/contact/theme/templates/ajax_snippets/contact_form.html:20
+msgid "Contact form"
+msgstr "Formulari i kontaktit"
+
+#: ckanext/contact/theme/templates/contact/form.html:16
+msgid "Contact us"
+msgstr "Na kontaktoni"
+
+#: ckanext/contact/theme/templates/contact/success.html:18
+msgid "Contact Us"
+msgstr "Na kontaktoni"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:17
+msgid "Questions? Comments? We are always glad to hear from you!"
+msgstr "Pyetje? Komentet? Ne jemi gjithmonë të lumtur të dëgjojmë nga ju!"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:22
+msgid "Contact Name"
+msgstr "Emri i kontaktit"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:25
+msgid "Email"
+msgstr "E-mail"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:29
+msgid "Your Request"
+msgstr "Kërkesa juaj"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:35
+msgid "What do you have to tell us?"
+msgstr "Çfarë keni për të na thënë?"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:40
+msgid "Submit"
+msgstr "Paraqisni"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:29
+msgid "Subject"
+msgstr "Subjekti"
+
+#: ckanext/contact/theme/templates/contact/snippets/form.html:31
+msgid "Optional subject"
+msgstr "Subjekt opsional"
