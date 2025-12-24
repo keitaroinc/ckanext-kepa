@@ -284,14 +284,45 @@ resource_fields:
   label: URL
   preset: resource_url_upload
 
-- field_name: name
-  label: Name
-  form_placeholder: eg. January 2011 Gold Prices
+- field_name: name_translated 
+  label: 
+    en: Name
+    sq: Emri
+    sr_Latn: Ime
+  fluent_form_label:
+    en:
+      en: Name (English)
+      sq: Emri (Anglisht)
+      sr_Latn: Ime (Engleski)
+    sq:
+      en: Name (Albanian)
+      sq: Emri (Shqip)
+      sr_Latn: Ime (Albanski)
+    sr_Latn:
+      en: Name (Serbian)
+      sq: Emri (Serbisht)
+      sr_Latn: Ime (Srpski)
+  preset: fluent_core_translated
 
-- field_name: description
-  label: Description
-  form_snippet: markdown.html
-  form_placeholder: Some useful notes about the data
+- field_name: resource_description
+  label: 
+    en: Description
+    sq: Përshkrimi
+    sr_Latn:  Opis
+  fluent_form_label:
+    en:
+      en: Description (English)
+      sq: Përshkrimi (Anglisht)
+      sr_Latn: Opis (Engleski)
+    sq:
+      en: Description (Albanian)
+      sq: Përshkrimi (Shqip)
+      sr_Latn: Opis (Albanski)
+    sr_Latn:
+      en: Description (Serbian)
+      sq: Përshkrimi (Serbisht)
+      sr_Latn: Opis (Srpski)  
+  preset: fluent_markdown
 
 - field_name: format
   label: Format
