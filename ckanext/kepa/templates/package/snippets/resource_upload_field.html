@@ -1,0 +1,7 @@
+{% ckan_extends %}
+
+{% set is_upload_enabled = h.allow_resource_upload() %}
+{# 
+if sysadmins should have upload permissions set
+{% set is_upload_enabled = h.allow_resource_upload() or g.userobj.sysadmin %}
+#}
