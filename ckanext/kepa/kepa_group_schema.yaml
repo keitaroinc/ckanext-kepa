@@ -1,0 +1,57 @@
+scheming_version: 1
+group_type: group
+about_url: https://github.com/keitaroinc/ckanext-kepa
+form_languages: [en, sq, sr_Latn]
+
+fields:
+- field_name: title_translated
+  label: 
+    en: Name
+    sq: Emri
+    sr_Latn: Ime
+  fluent_form_label:
+    en:
+      en: Name (English)
+      sq: Emri (Anglisht)
+      sr_Latn: Ime (Engleski)
+    sq:
+      en: Name (Albanian)
+      sq: Emri (Shqip)
+      sr_Latn: Ime (Albanski)
+    sr_Latn:
+      en: Name (Serbian)
+      sq: Emri (Serbisht)
+      sr_Latn: Ime (Srpski)
+  preset: fluent_core_translated
+  required: true
+
+- field_name: name
+  label: URL
+  validators: not_empty unicode_safe name_validator group_name_validator
+  form_snippet: slug.html
+
+- field_name: notes_translated
+  label: 
+    en: Description
+    sq: Përshkrimi
+    sr_Latn:  Opis
+  fluent_form_label:
+    en:
+      en: Description (English)
+      sq: Përshkrimi (Anglisht)
+      sr_Latn: Opis (Engleski)
+    sq:
+      en: Description (Albanian)
+      sq: Përshkrimi (Shqip)
+      sr_Latn: Opis (Albanski)
+    sr_Latn:
+      en: Description (Serbian)
+      sq: Përshkrimi (Serbisht)
+      sr_Latn: Opis (Srpski)
+  preset: fluent_core_translated
+  form_snippet: fluent_markdown.html
+
+
+- field_name: image_url
+  label: Image
+  form_snippet: organization_upload.html
