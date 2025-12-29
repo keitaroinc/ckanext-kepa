@@ -1,0 +1,22 @@
+{% ckan_extends %}
+
+{% block group_item_header_title %}
+  <h3 class="media-heading">
+    <a href="{{ url }}">
+      {{ h.get_translated(group, "title") or group.name }}
+    </a>
+  </h3>
+{% endblock %}
+
+{% block group_item_header_description %}
+  {% set notes = h.get_translated(group, "notes") %}
+  {% if notes %}
+    <p>
+      {% if truncate == 0 %}
+        {{ h.markdown_extract(notes) | urlize }}
+      {% else %}
+        {{ h.markdown_extract(notes, truncate) | urlize }}
+      {% endif %}
+    </p>
+  {% endif %}
+{% endblock %}

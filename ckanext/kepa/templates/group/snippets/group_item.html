@@ -1,0 +1,16 @@
+{% ckan_extends %}
+
+{% block title %}
+  <h3 class="media-heading">{{ h.get_translated(group, "title") or group.name }}</h3>
+{% endblock %}
+{% block description %}
+  {% if h.get_translated(group,"notes") %}
+    <p>{{ h.markdown_extract(h.get_translated(group,"notes"), extract_length=80) }}</p>
+  {% endif %}
+{% endblock %}
+{% block link %}
+  {% set group_name = (h.get_translated(group, "title") or group.name) %}
+  <a href="{{ url }}" title="{{ _('View {group_name}').format(group_name=group_name) }}" class="media-view">
+    <span>{{ _('View {group_name}').format(group_name=group_name) }}</span>
+  </a>
+{% endblock %}
