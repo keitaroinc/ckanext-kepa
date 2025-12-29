@@ -1,16 +1,23 @@
 {% ckan_extends %}
 
 {% block organization_item_header_title %}
-  {{ h.get_translated(organization, "title") }}
-  <h3 class="media-heading"><a href={{ url }}>{{ h.get_translated(organization, "title") or organization.name }}</a></h3>
-  }
+  <h3 class="media-heading">
+    <a href="{{ url }}">
+      {{ h.get_translated(organization, "title") or organization.name }}
+    </a>
+  </h3>
 {% endblock %}
+
+
 {% block organization_item_header_description %}
-  {% if h.get_translated(organization,"notes") %}
-    {% if truncate == 0 %}
-      <p>{{ h.markdown_extract(h.get_translated(organization,"notes"))|urlize }}</p>
-    {% else %}
-      <p>{{ h.markdown_extract(h.get_translated(organization,"notes"), truncate)|urlize }}</p>
-    {% endif %}
+  {% set notes = h.get_translated(organization, "notes") %}
+  {% if notes %}
+    <p>
+      {% if truncate == 0 %}
+        {{ h.markdown_extract(notes) | urlize }}
+      {% else %}
+        {{ h.markdown_extract(notes, truncate) | urlize }}
+      {% endif %}
+    </p>
   {% endif %}
 {% endblock %}
