@@ -33,4 +33,5 @@ class KepaPlugin(plugins.SingletonPlugin, DefaultTranslation):
     def get_helpers(self):
         return {
             'allow_resource_upload': helpers.allow_resource_upload,
+            'organization_show_full': helpers.organization_show_full,
         }
