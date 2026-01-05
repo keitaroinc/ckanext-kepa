@@ -402,3 +402,12 @@ msgstr "Subjekti"
 #: ckanext/contact/theme/templates/contact/snippets/form.html:31
 msgid "Optional subject"
 msgstr "Subjekt opsional"
+
+# transated tags
+msgid "environment"
+msgstr "mjedisor"
+
+msgid "enviromental data"
+msgstr "të dhëna mjedisore"
+
+# end transated tags

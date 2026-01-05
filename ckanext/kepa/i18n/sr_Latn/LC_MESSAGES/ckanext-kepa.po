@@ -406,3 +406,12 @@ msgstr "Predmet"
 #: ckanext/contact/theme/templates/contact/snippets/form.html:31
 msgid "Optional subject"
 msgstr "Opcioni predmet e-maila"
+
+# transated tags
+msgid "environment"
+msgstr "okruženje"
+
+msgid "enviromental data"
+msgstr "podatci o životnoj sredini"
+
+# end transated tags

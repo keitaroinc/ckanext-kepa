@@ -19,9 +19,8 @@
     </form>
     <div class="tags">
       <h4>{{ _('Popular tags') }}</h4>
-      {% for tag in tags %}
-      <a class="tag" href="{% url_for 'dataset.search', tags=tag.name %}" title="{{ tag.display_name }}">{{
-        tag.display_name|truncate(22) }}</a>
+      {% for tag in tags[:5] %}
+      <a class="tag" href="{% url_for 'dataset.search', tags=tag.name %}" title="{{ tag.display_name }}">{{ _(tag.display_name)|truncate(22) }}</a>
       {% endfor %}
     </div>
   </div>
