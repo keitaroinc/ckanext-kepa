@@ -22,9 +22,15 @@ class KepaPlugin(plugins.SingletonPlugin, DefaultTranslation):
         ignore_missing = toolkit.get_validator('ignore_missing')
         validators = [ignore_missing]
         schema.update({
-            'footer_social': validators,
-            'footer_dataportal': validators,
-            'footer_toolbox': validators,
+            'footer_social_en': validators,
+            'footer_dataportal_en': validators,
+            'footer_toolbox_en': validators,
+            'footer_social_sq': validators,
+            'footer_dataportal_sq': validators,
+            'footer_toolbox_sq': validators,
+            'footer_social_sr': validators,
+            'footer_dataportal_sr': validators,
+            'footer_toolbox_sr': validators,
         })
 
         return schema

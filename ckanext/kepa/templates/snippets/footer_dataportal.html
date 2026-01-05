@@ -1,8 +1,15 @@
-{% if g.footer_dataportal %}
+{% set current_lang = request.environ.CKAN_LANG %}
+
 <div class="col-md-4 attribution">
   <h2 class="title">{{ _('The Kosovo dataportal') }}</h2>
   <div class="links">
-    {{ h.render_markdown(g.footer_dataportal) }}
+  {% if g.footer_dataportal_en and current_lang == 'en' %}
+    {{ h.render_markdown(g.footer_dataportal_en) }}
+  {% elif g.footer_dataportal_sq and current_lang == 'sq' %}
+    {{ h.render_markdown(g.footer_dataportal_sq) }}
+  {% elif g.footer_dataportal_sr and current_lang == 'sr_Latin' %}
+    {{ h.render_markdown(g.footer_dataportal_sr) }}
+  {% endif %}
   </div>
 </div>
-{% endif %}
+
