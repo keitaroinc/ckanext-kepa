@@ -1,0 +1,79 @@
+{% ckan_extends %}
+
+{% import 'macros/form.html' as form %}
+
+{% block styles %}
+  {{ super() }}
+  <style>
+    .custom-accordion { margin-top: 20px; border: 1px solid #ddd; border-radius: 4px; }
+    .accordion-item { border-bottom: 1px solid #ddd; }
+    .accordion-header { 
+      background-color: #f9f9f9; padding: 12px 15px; cursor: pointer; 
+      font-weight: bold; display: block; color: #333;
+    }
+    .accordion-content { display: none; padding: 20px; background: #fff; border-top: 1px solid #eee; }
+    .acc-icon { float: right; }
+    .active .acc-icon { transform: rotate(90deg); }
+  </style>
+{% endblock %}
+
+{% block admin_form %}
+  {{ h.csrf_input() }}
+  {{ super() }}
+
+  <div class="custom-accordion" id="ckan-manual-accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">
+        {{ _('Footer Dataportal Settings') }} <i class="fa fa-chevron-right acc-icon"></i>
+      </div>
+      <div class="accordion-content">
+        {{ form.markdown('footer_dataportal', label=_('Footer Dataportal'), value=data.footer_dataportal, error=error, classes=['control-full']) }}
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        {{ _('Footer Toolbox Settings') }} <i class="fa fa-chevron-right acc-icon"></i>
+      </div>
+      <div class="accordion-content">
+        {{ form.markdown('footer_toolbox', label=_('Footer Toolbox'), value=data.footer_toolbox, error=error, classes=['control-full']) }}
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">
+        {{ _('Footer Social Settings') }} <i class="fa fa-chevron-right acc-icon"></i>
+      </div>
+      <div class="accordion-content">
+        {{ form.markdown('footer_social', label=_('Footer Social'), value=data.footer_social, error=error, classes=['control-full']) }}
+      </div>
+    </div>
+  </div>
+
+  {# NEW DELAYED SCRIPT TO FIX "JQUERY NOT DEFINED" #}
+  <script type="text/javascript">
+    function initAccordion() {
+      if (window.jQuery) {
+        (function($) {
+          $(document).off('click', '.accordion-header').on('click', '.accordion-header', function(e) {
+            var $header = $(this);
+            var $content = $header.next('.accordion-content');
+            var $item = $header.parent();
+
+            $('.accordion-content').not($content).slideUp(200);
+            $('.accordion-item').not($item).removeClass('active');
+
+            $content.slideToggle(200, function() {
+              $item.toggleClass('active');
+            });
+          });
+          console.log("Accordion logic initialized successfully.");
+        })(window.jQuery);
+      } else {
+        // If jQuery isn't ready yet, wait 100ms and try again
+        setTimeout(initAccordion, 100);
+      }
+    }
+    initAccordion();
+  </script>
+{% endblock %}

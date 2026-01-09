@@ -1,20 +1,28 @@
 from ckan.common import config, asbool
-from ckan.plugins.toolkit import get_action
-from ckan import model
+import ckan.plugins.toolkit as toolkit
+
 
 def allow_resource_upload() -> bool:
-    
+
     upload_config = config.get('ckan.allow_resource_upload', False)
     return asbool(upload_config)
 
 
-def organization_show_full(org_id):
-    context = {
-        'model': model,
-        'ignore_auth': True,
-    }
+def group_show_full(group_id):
+    try:
+        return toolkit.get_action('group_show')(
+            {'ignore_auth': True},
+            {'id': group_id}
+        )
+    except Exception:
+        return None
 
-    return get_action('organization_show')(
-        context,
-        {'id': org_id, 'include_extras': True}
-    )
+
+def organization_show_full(org_id):
+    try:
+        return toolkit.get_action('organization_show')(
+            {'ignore_auth': True},
+            {'id': org_id}
+        )
+    except Exception:
+        return None
