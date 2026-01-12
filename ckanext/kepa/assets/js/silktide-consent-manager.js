@@ -784,63 +784,116 @@ class SilktideCookieBanner {
   }
 }
 
+
+
+
+
+
+
+
+
 (function () {
-  window.silktideCookieBannerManager = {};
+    const translations = {
+        "en": {
+            "banner": {
+                "description": "<p>We use cookies to enhance your experience and analyze our traffic.</p>",
+                "acceptAllButtonText": "Accept all",
+                "rejectNonEssentialButtonText": "Reject optional",
+                "preferencesButtonText": "Settings"
+            },
+            "preferences": {
+                "title": "Privacy Settings",
+                "description": "<p>You can choose which cookies to allow.</p>",
+                "creditLinkText": "Cookie Policy"
+            },
+            "categories": {
+                "essential": { "name": "Necessary", "desc": "Required for the site to function." },
+                "analytics": { "name": "Analytics", "desc": "Helps us improve our website." }
+            }
+        },
+        "sr_Latn": {
+            "banner": {
+                "description": "<p>Koristimo kolačiće kako bismo poboljšali vaše korisničko iskustvo i analizirali saobraćaj.</p>",
+                "acceptAllButtonText": "Prihvati sve",
+                "rejectNonEssentialButtonText": "Odbij opcione",
+                "preferencesButtonText": "Podešavanja"
+            },
+            "preferences": {
+                "title": "Podešavanja privatnosti",
+                "description": "<p>Možete odabrati koje kolačiće dozvoljavate.</p>",
+                "creditLinkText": "Politika kolačića"
+            },
+            "categories": {
+                "essential": { "name": "Neophodni", "desc": "Potrebni su za rad osnovnih funkcija sajta." },
+                "analytics": { "name": "Analitika", "desc": "Pomažu nam da unapredimo sajt." }
+            }
+        },
+        "sq": {
+            "banner": {
+                "description": "<p>Ne përdorim cookie për të përmirësuar përvojën tuaj dhe për të analizuar trafikun tonë.</p>",
+                "acceptAllButtonText": "Pranoji të gjitha",
+                "rejectNonEssentialButtonText": "Refuzo opsionalet",
+                "preferencesButtonText": "Cilësimet"
+            },
+            "preferences": {
+                "title": "Cilësimet e privatësisë",
+                "description": "<p>Ju mund të zgjidhni cilat cookie të lejoni.</p>",
+                "creditLinkText": "Politika e cookies"
+            },
+            "categories": {
+                "essential": { "name": "Të nevojshme", "desc": "Kërkohen që faqja të funksionojë siç duhet." },
+                "analytics": { "name": "Analitika", "desc": "Na ndihmojnë të përmirësojmë faqen." }
+            }
+        }
+    };
 
-  let config = {};
-  let cookieBanner;
+    function initSilktideSafely() {
+        if (document.getElementById('silktide-wrapper')) return;
 
-  function updateCookieBannerConfig(userConfig = {}) {
-    config = {...config, ...userConfig};
+        // Use the Bridge variable from page.html
+        const langKey = window.CKAN_CURRENT_LANG || "en";
+        const t = translations[langKey] || translations["en"];
 
-    // If cookie banner exists, destroy and recreate it with new config
-    if (cookieBanner) {
-      cookieBanner.destroyCookieBanner(); // We'll need to add this method
-      cookieBanner = null;
+        const config = {
+            "text": t,
+            "autoShow": true,
+            // These structural keys prevent the "style of undefined" error
+            "position": {
+                "banner": "bottom",
+                "cookieIcon": "bottomLeft"
+            },
+            "branding": {
+                "primaryColor": "#0071bc"
+            },
+            "cookieTypes": [
+                {
+                    "id": "essential",
+                    "name": t.categories.essential.name,
+                    "description": t.categories.essential.desc,
+                    "required": true
+                },
+                {
+                    "id": "analytics",
+                    "name": t.categories.analytics.name,
+                    "description": t.categories.analytics.desc,
+                    "required": false
+                }
+            ]
+        };
+
+        if (typeof SilktideCookieBanner !== 'undefined') {
+            try {
+                new SilktideCookieBanner(config);
+            } catch (err) {
+                console.error("Silktide Class initialization error:", err);
+            }
+        }
     }
 
-    // Only initialize if document.body exists
-    if (document.body) {
-      initCookieBanner();
+    // We use window.load to ensure all styles are computed before calculating positions
+    if (document.readyState === "complete") {
+        initSilktideSafely();
     } else {
-      // Wait for DOM to be ready
-      document.addEventListener('DOMContentLoaded', initCookieBanner, {once: true});
+        window.addEventListener('load', initSilktideSafely);
     }
-  }
-
-  function initCookieBanner() {
-    if (!cookieBanner) {
-      cookieBanner = new SilktideCookieBanner(config); // Pass config to the CookieBanner instance
-    }
-  }
-
-  function injectScript(url, loadOption) {
-    // Check if script with this URL already exists
-    const existingScript = document.querySelector(`script[src="${url}"]`);
-    if (existingScript) {
-      return; // Script already exists, don't add it again
-    }
-
-    const script = document.createElement('script');
-    script.src = url;
-
-    // Apply the async or defer attribute based on the loadOption parameter
-    if (loadOption === 'async') {
-      script.async = true;
-    } else if (loadOption === 'defer') {
-      script.defer = true;
-    }
-
-    document.head.appendChild(script);
-  }
-
-  window.silktideCookieBannerManager.initCookieBanner = initCookieBanner;
-  window.silktideCookieBannerManager.updateCookieBannerConfig = updateCookieBannerConfig;
-  window.silktideCookieBannerManager.injectScript = injectScript;
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initCookieBanner, {once: true});
-  } else {
-    initCookieBanner();
-  }
 })();

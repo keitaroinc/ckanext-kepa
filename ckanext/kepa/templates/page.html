@@ -133,7 +133,8 @@
   {% if g.tracking_enabled %}
     {% asset 'base/tracking' %}
   {% endif %}
-{% asset 'kepa/kepa-js' %}
-
   {{ super() }}
+  <script>window.CKAN_CURRENT_LANG = "{{ request.environ.CKAN_LANG }}";</script>
+  {% asset 'kepa/kepa-js' %}
 {% endblock -%}
+
