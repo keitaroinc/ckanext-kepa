@@ -134,7 +134,5 @@
     {% asset 'base/tracking' %}
   {% endif %}
   {{ super() }}
-  <script>window.CKAN_CURRENT_LANG = "{{ request.environ.CKAN_LANG }}";</script>
-  {% include "snippets/silktide.html" %}
 {% endblock -%}
 
