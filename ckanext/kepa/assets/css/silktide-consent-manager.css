@@ -13,12 +13,12 @@
               --focus: 0 0 0 2px #ffffff, 0 0 0 4px #000000, 0 0 0 6px #ffffff;
               --boxShadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
               --fontFamily: Helvetica Neue, Segoe UI, Arial, sans-serif;
-              --primaryColor: #533BE2;
+              --primaryColor: #1c768f;
               --backgroundColor: #FFFFFF;
               --textColor: #4B494B;
               --backdropBackgroundColor: #00000033;
               --backdropBackgroundBlur: 0px;
-              --cookieIconColor: #533BE2;
+              --cookieIconColor: #1c768f;
               --cookieIconBackgroundColor: #FFFFFF;
               position: fixed;
   bottom: 0;
@@ -116,6 +116,9 @@
   Banner
 -------------------------------- */
 #silktide-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   font-family: var(--fontFamily);
   color: var(--textColor);
   background-color: var(--backgroundColor);
@@ -194,9 +197,22 @@
 }
 
 #silktide-banner p {
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0px 0px 15px;
+  /* hard reset CKAN / Bootstrap pollution */
+  position: static !important;
+  float: none !important;
+  display: block !important;
+
+  /* flex layout guarantee */
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  /* spacing */
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+
+  /* typography safety */
+  line-height: 1.5;
 }
 
 #silktide-banner a {
@@ -224,8 +240,12 @@
 #silktide-banner .actions {
   display: flex;
   gap: 16px;
-  flex-direction: column;
   margin-top: 24px;
+  position: static !important;
+  flex: 0 0 100% !important;
+  flex-direction: column;
+  width: 100% !important;
+  margin-top: 8px;
 }
 
 @media (min-width: 600px) {
