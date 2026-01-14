@@ -135,6 +135,6 @@
   {% endif %}
   {{ super() }}
   <script>window.CKAN_CURRENT_LANG = "{{ request.environ.CKAN_LANG }}";</script>
-  {% asset 'kepa/kepa-js' %}
+  {% include "snippets/silktide.html" %}
 {% endblock -%}
 

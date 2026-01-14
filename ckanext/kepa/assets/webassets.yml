@@ -1,11 +1,11 @@
-kepa-js:
-  filter: rjsmin
-  output: ckanext-kepa/%(version)s-kepa.js
-  contents:
-    - js/silktide-consent-manager.js
-  extra:
-    preload:
-      - base/main
+# kepa-js:
+#   filter: rjsmin
+#   output: ckanext-kepa/%(version)s-kepa.js
+#   contents:
+#     - js/silktide-consent-manager.js
+#   extra:
+#     preload:
+#       - base/main
 
 kepa-css:
   filter: cssrewrite
