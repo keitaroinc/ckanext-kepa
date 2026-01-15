@@ -5,5 +5,5 @@
 
 {% asset 'kepa/kepa-css' %}
   <script>window.CKAN_CURRENT_LANG = "{{ request.environ.CKAN_LANG }}";</script>
-  {% include "snippets/silktide.html" %}
+  <script src="{{ h.url_for_static('/silktide/silktide-consent-manager.js') }}" defer></script>
 {% endblock %}
