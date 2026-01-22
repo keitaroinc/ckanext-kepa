@@ -67,10 +67,25 @@ dataset_fields:
   preset: fluent_core_translated
   form_snippet: fluent_markdown.html
 
-- field_name: tag_string
-  label: Tags
-  preset: tag_string_autocomplete
-  form_placeholder: eg. water, air, agency
+- field_name: keywords
+  preset: fluent_tags
+  label:
+    en: Tags
+    sq: Etiketat
+    sr_Latn: Oznake
+  fluent_form_label:
+    en:
+      en: Tags (English)
+      sq: Etiketat (Anglisht)
+      sr_Latn: Oznake (Engleski)
+    sq:
+      en: Tags (Albanian)
+      sq: Etiketat (Shqip)
+      sr_Latn: Oznake (Albanski)
+    sr_Latn::
+      en: Tags (Serbian)
+      sq: Etiketat (Serbisht)
+      sr_Latn: Oznake (Srpski)
 
 - field_name: license_id
   label: License
