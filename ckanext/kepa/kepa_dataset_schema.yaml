@@ -86,6 +86,19 @@ dataset_fields:
       en: Tags (Serbian)
       sq: Etiketat (Serbisht)
       sr_Latn: Oznake (Srpski)
+  fluent_help_text:
+    en:
+      en: "Keywords, separated by comma, to help describe and find this dataset."
+      sq: "Fjalë kyçe, të ndara me presje, për të ndihmuar në përshkrimin dhe gjetjen e këtij grupi të dhënash."
+      sr_Latn: "Ključne reči, odvojene zarezom, koje pomažu u opisivanju i pronalaženju ovog skupa podataka."
+    sq:
+      en: "Keywords, separated by comma, to help describe and find this dataset."
+      sq: "Fjalë kyçe, të ndara me presje, për të ndihmuar në përshkrimin dhe gjetjen e këtij grupi të dhënash."
+      sr_Latn: "Ključne reči, odvojene zarezom, koje pomažu u opisivanju i pronalaženju ovog skupa podataka."
+    sr_Latn:
+      en: "Keywords, separated by comma, to help describe and find this dataset."
+      sq: "Fjalë kyçe, të ndara me presje, për të ndihmuar në përshkrimin dhe gjetjen e këtij grupi të dhënash."
+      sr_Latn: "Ključne reči, odvojene zarezom, koje pomažu u opisivanju i pronalaženju ovog skupa podataka."      
 
 - field_name: license_id
   label: License
