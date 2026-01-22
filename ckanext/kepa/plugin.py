@@ -112,5 +112,39 @@ class KepaPlugin(plugins.SingletonPlugin, DefaultTranslation):
 
         facets_dict = facets_dict.copy()
         facets_dict[facet_field] = toolkit._("Keywords")
-        
+
+        return facets_dict
+
+    def group_facets(self, facets_dict, group_type, package_type):
+        """
+        Select the facet field based on current UI language.
+        """
+
+        lang = i18n.get_lang()
+
+        if lang not in SUPPORTED_LANGS:
+            lang = DEFAULT_LANG
+
+        facet_field = f"keywords_facet_{lang}"
+
+        facets_dict = facets_dict.copy()
+        facets_dict[facet_field] = toolkit._("Keywords")
+
+        return facets_dict
+
+    def organization_facets(self, facets_dict, organization_type, package_type):
+        """
+        Select the facet field based on current UI language.
+        """
+
+        lang = i18n.get_lang()
+
+        if lang not in SUPPORTED_LANGS:
+            lang = DEFAULT_LANG
+
+        facet_field = f"keywords_facet_{lang}"
+
+        facets_dict = facets_dict.copy()
+        facets_dict[facet_field] = toolkit._("Keywords")
+
         return facets_dict
