@@ -1,4 +1,7 @@
-{% set tags = h.get_facet_items_dict('tags', search_facets) %}
+{% set current_lang = request.environ.CKAN_LANG %}
+{% set facet_field = 'keywords_facet_' ~ current_lang %}
+{% set facets = h.homepage_facets(current_lang) %}
+{% set keywords = h.get_facet_items_dict(facet_field, facets) %}
 {% set placeholder = _('Search...') %}
 {% set dataset_type = h.default_package_type() %}
 
@@ -18,9 +21,12 @@
       </div>
     </form>
     <div class="tags">
-      <h4>{{ _('Popular tags') }}</h4>
-      {% for tag in tags[:5] %}
-      <a class="tag" href="{% url_for 'dataset.search', tags=tag.name %}" title="{{ tag.display_name }}">{{ _(tag.display_name)|truncate(22) }}</a>
+      <h4>{{ _('Popular keywords') }}</h4>
+      {% for keyword in keywords[:5] %}
+      <a class="tag" 
+      href="/{{ current_lang }}/dataset/?{{ facet_field }}={{ keyword.name | urlencode }}" 
+      title="{{ keyword.display_name }}">
+      {{ _(keyword.display_name)|truncate(22) }}</a>
       {% endfor %}
     </div>
   </div>

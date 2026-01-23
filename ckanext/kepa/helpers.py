@@ -26,3 +26,16 @@ def organization_show_full(org_id):
         )
     except Exception:
         return None
+
+
+def homepage_facets(lang):
+    facet_field = f"keywords_facet_{lang}"
+
+    data_dict = {
+        "rows": 0,
+        "facet.field": [facet_field],
+        "include_private": False,
+    }
+
+    result = toolkit.get_action("package_search")({}, data_dict)
+    return result.get("search_facets", {})

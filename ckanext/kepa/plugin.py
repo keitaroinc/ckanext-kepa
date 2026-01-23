@@ -47,6 +47,7 @@ class KepaPlugin(plugins.SingletonPlugin, DefaultTranslation):
             'allow_resource_upload': helpers.allow_resource_upload,
             'organization_show_full': helpers.organization_show_full,
             'group_show_full': helpers.group_show_full,
+            'homepage_facets': helpers.homepage_facets,
         }
 
     # IPackageController
