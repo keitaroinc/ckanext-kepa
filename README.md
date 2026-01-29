@@ -12,11 +12,9 @@ Compatibility with core CKAN versions:
 
 | CKAN version    | Compatible?   |
 | --------------- | ------------- |
-| 2.6 and earlier | not tested    |
-| 2.7             | not tested    |
-| 2.8             | not tested    |
-| 2.9             | not tested    |
+| 2.9 and earlier | not tested    |
 | 2.10            | Yes           |
+| 2.11            | not tested    |
 
 
 
@@ -44,9 +42,11 @@ To install ckanext-kepa:
      sudo service apache2 reload
 
 
-## Config settings
+## Configuration Settings
 
-1. On the web interface in /ckan-admin/config settings We can add the custom links that will appear in all 3 footer sections.
+1. The custom Solr schema used by the KEPA Open Data Portal is located in the `/config/solr` directory.
+
+2. Through the CKAN web interface (`/ckan-admin/config`), administrators can configure custom links that will be displayed across all three footer sections.
 
 
 
